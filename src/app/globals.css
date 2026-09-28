@@ -27,6 +27,10 @@ body {
   min-height: 100%;
 }
 
+html {
+  scroll-padding-top: 4.5rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
