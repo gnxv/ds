@@ -65,7 +65,7 @@ export function SiteFooter({ tone }: { tone: Tone }) {
         </div>
         <div className={`text-sm ${t.muted}`}>
           <p>{site.phone}</p>
-          <p className="mt-1">Скелет сайта · контент добавим блоками</p>
+          <p className="mt-1">Солярий и R-Sleek · соседние кабинеты</p>
         </div>
       </div>
     </footer>
