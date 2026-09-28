@@ -37,9 +37,8 @@ export const services = {
     headline: "Силуэт без паузы в жизни.",
     lead: "Роликовый массаж, который уводит отёк и собирает линию тела. Вышел из кабинета — и дальше по дню.",
     nav: [
-      { href: "#method", label: "Как работает" },
+      { href: "#method", label: "Аппарат" },
       { href: "#effect", label: "Эффект" },
-      { href: "#results", label: "До и после" },
       { href: "#formats", label: "Форматы" },
       { href: "#course", label: "Курс" },
       { href: "#faq", label: "Вопросы" },
