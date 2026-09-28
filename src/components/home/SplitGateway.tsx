@@ -12,16 +12,8 @@ export function SplitGateway() {
 
   return (
     <main className="relative min-h-dvh overflow-hidden bg-black text-white">
-      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-start justify-between px-6 py-6 md:px-10">
-        <div>
-          <p className="font-serif text-2xl tracking-[0.28em]">{site.name}</p>
-          <p className="mt-1 text-[11px] uppercase tracking-[0.32em] text-white/55">
-            {site.tagline}
-          </p>
-        </div>
-        <p className="hidden max-w-[14rem] text-right text-[11px] uppercase leading-5 tracking-[0.22em] text-white/50 md:block">
-          {site.location}
-        </p>
+      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 px-6 py-6 md:px-10">
+        <p className="font-serif text-2xl tracking-[0.28em]">{site.name}</p>
       </header>
 
       <div className="flex min-h-dvh flex-col md:flex-row">
