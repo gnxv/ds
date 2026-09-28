@@ -39,7 +39,7 @@ export function SplitGateway() {
           href={services.rsleek.slug}
           kicker={services.rsleek.kicker}
           title={services.rsleek.name}
-          line="Объёмы, которые мешают одежде."
+          line="Роликовый массаж без вакуума."
           tone="sculpt"
           expanded={hover === "rsleek"}
           dimmed={hover === "solarium"}
