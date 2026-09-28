@@ -28,7 +28,7 @@ export function SplitGateway() {
           href={services.solarium.slug}
           kicker={services.solarium.kicker}
           title={services.solarium.name}
-          line="Загар, который выглядит как отдых."
+          line="Ровный тон за один визит."
           tone="sun"
           expanded={hover === "solarium"}
           dimmed={hover === "rsleek"}
@@ -39,7 +39,7 @@ export function SplitGateway() {
           href={services.rsleek.slug}
           kicker={services.rsleek.kicker}
           title={services.rsleek.name}
-          line="Силуэт собирается курсом."
+          line="Объёмы, которые мешают одежде."
           tone="sculpt"
           expanded={hover === "rsleek"}
           dimmed={hover === "solarium"}

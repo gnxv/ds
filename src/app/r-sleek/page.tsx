@@ -10,79 +10,85 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "R-Sleek",
   description:
-    "Аппаратный массаж R-Sleek в Fiolet: ротационная термокомпрессия для объёмов, отёка и рельефа кожи. Сеансы 40 и 60 минут.",
+    "R-Sleek в Fiolet — роликовый массаж для линии тела. Меньше отёка, спокойнее объёмы, кожа ровнее. 40 и 60 минут.",
 };
 
 const effects = [
   {
-    title: "Отёк и тяжесть",
-    text: "Ролики разгоняют лимфу и межтканевую жидкость. После сеанса тело часто ощущается легче — не потому что «сожгли жир за час», а потому что ушёл застой.",
+    title: "Лёгкость в тот же день",
+    text: "Ролики уводят застоявшуюся жидкость. Джинсы садятся иначе не потому что «сгорел жир», а потому что тело перестало держать воду.",
   },
   {
-    title: "Локальные объёмы",
-    text: "Компрессия достаёт слои, которые плохо отвечают на зал и диету: низ живота, бока, внешняя и внутренняя поверхность бедра.",
+    title: "Зоны, которые не сдаются залу",
+    text: "Низ живота, бока, галифе, внутренняя поверхность бедра. Туда, куда не дотягивается ни пресс, ни бег.",
   },
   {
-    title: "Рельеф кожи",
-    text: "Целлюлит — это не только жир, это ещё и жидкость с фиброзными перегородками. Механическая проработка выравнивает картину на поверхности.",
+    title: "Кожа без апельсиновой корки",
+    text: "Целлюлит — смесь жира, жидкости и перегородок. Аппарат разминает этот слой, и поверхность выглядит спокойнее.",
   },
   {
-    title: "Тонус",
-    text: "Тепло от трения роликов усиливает микроциркуляцию. Кожа в зоне работы выглядит плотнее, без обещаний «минус размер за ночь».",
+    title: "Плотность, не дряблость",
+    text: "Тепло от роликов будит микроциркуляцию. После курса зона не просто меньше — она собраннее на ощупь.",
   },
 ];
 
 const zones = [
-  { name: "Живот и талия", shot: "живот сбоку, без лица, мягкий свет" },
-  { name: "Бока", shot: "линия талии, руки подняты" },
-  { name: "Бёдра", shot: "передняя и внешняя поверхность бедра" },
-  { name: "Ягодицы", shot: "силуэт со спины, без пошлости" },
+  { name: "Живот и талия", shot: "живот сбоку, без лица" },
+  { name: "Бока", shot: "линия талии" },
+  { name: "Бёдра", shot: "внешняя линия бедра" },
+  { name: "Ягодицы", shot: "силуэт со спины" },
   { name: "Руки", shot: "задняя поверхность плеча" },
-  { name: "Спина", shot: "зона лопаток и поясницы" },
+  { name: "Спина", shot: "поясница / лопатки" },
+];
+
+const pairs = [
+  { zone: "Живот", need: "один ракурс, один свет, до курса и после 8–10 сеансов" },
+  { zone: "Бёдра", need: "ноги в одном положении, метка на полу" },
+  { zone: "Талия", need: "анфас, руки в стороны, без втягивания живота" },
 ];
 
 const steps = [
   {
     n: "01",
-    title: "Разбор зон",
-    text: "Коротко: что беспокоит, какие участки берём сегодня, нет ли ограничений. При курсе имеет смысл фиксировать объёмы сантиметром.",
+    title: "Смотрим тело, не прайс",
+    text: "Какие зоны мешают в одежде, где отёк, где плотность. Если есть ограничения — говорим до того, как лечь на кушетку.",
   },
   {
     n: "02",
-    title: "Работа манипулой",
-    text: "Сначала лимфодренажная линия, затем плотность на проблемных участках. Ощущение — глубокий массаж с теплом, не щипок вакуумом.",
+    title: "Сначала лимфа, потом объём",
+    text: "Манипула проходит линии оттока и только затем берёт проблемный участок. Ощущение плотное и тёплое — без вакуумного щипка.",
   },
   {
     n: "03",
-    title: "После кабинета",
-    text: "Вода, спокойный вечер, без сауны и жёсткой тренировки в тот же день. К обычному ритму можно возвращаться сразу.",
+    title: "Встали и ушли",
+    text: "Ни синяков, ни дня на диване. Вода, свободная одежда, без сауны сегодня. Завтра можно жить как обычно.",
   },
 ];
 
 const faqs = [
   {
-    q: "Чем это отличается от LPG и вакуумных банок?",
-    a: "Вакуум втягивает складку. R-Sleek давит и вращает роликами — кожа не засасывается. Поэтому синяки встречаются реже, а проработка идёт вглубь за счёт веса манипулы и скорости роликов.",
+    q: "Это тот же LPG?",
+    a: "Нет. LPG и банки втягивают складку вакуумом. R-Sleek катает роликами с весом — кожа не засасывается. Поэтому синяков меньше, а ход идёт глубже.",
   },
   {
-    q: "Это больно?",
-    a: "Нет, если не просить «выкрутить на максимум». Нормальное ощущение — плотное давление и тепло. После сеанса мышцы могут ныть пару часов, как после хорошей тренировки.",
+    q: "Будет больно?",
+    a: "Не должно. Норма — глубокий массаж и тепло. Если просить «выкрути», можно получить крепатуру на вечер. Это не цель.",
   },
   {
-    q: "После одного раза будет эффект?",
-    a: "Да, часто визуально: меньше пастозности, спокойнее линия одежды. Это в основном жидкость. Устойчивый контур собирается серией сеансов, а не одним визитом.",
+    q: "Один сеанс что-то даст?",
+    a: "Да: меньше пастозности, спокойнее линия в зеркале. Чтобы объём не вернулся за неделю, нужна серия. Один визит — знакомство с телом, не финал.",
   },
   {
-    q: "Сколько ходить?",
-    a: "Ориентир: 6 процедур, чтобы понять ответ тела. 10–12 — рабочий курс. Интервал 1–3 дня, не каждый день. Поддержку потом держат 1–2 сеансами в месяц.",
+    q: "Сколько раз приходить?",
+    a: "Шесть — чтобы понять, как отвечаете. Десять–двенадцать — рабочий курс. Между сеансами день или два. Потом поддержка раз в две–четыре недели.",
   },
   {
-    q: "Нужен специальный костюм?",
-    a: "Зависит от насадки и зоны. Иногда работают по маслу, иногда по скользящему комбинезону — так ролики не цепляют волосы и кожу. Скажем на месте.",
+    q: "Зачем костюм?",
+    a: "Чтобы ролики скользили и не цепляли кожу и волосы. Иногда работаем по маслу — зависит от насадки и зоны.",
   },
   {
-    q: "Можно совмещать со спортом и солярием?",
-    a: "Да. Зал лучше не в тот же вечер. Солярий — в другой кабинет, в другой слот: кожу после плотного массажа лучше не печь сразу.",
+    q: "Можно в тот же день в солярий?",
+    a: "Лучше разнести. После плотной проработки кожу не стоит сразу греть лампами. Солярий — соседний кабинет, другой слот.",
   },
 ];
 
@@ -100,34 +106,33 @@ export default function RSleekPage() {
           src="/media/r-sleek/hero.mp4"
           poster="/media/r-sleek/hero.jpg"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0e12] via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/82 via-black/50 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0e12] via-transparent to-black/35" />
         <div className="relative mx-auto flex min-h-[86dvh] max-w-6xl flex-col justify-end px-5 pb-14 pt-24 md:px-6 md:pb-20">
           <p className="text-[11px] uppercase tracking-[0.38em] text-[#8fa08c]">
-            Аппаратный массаж
+            Fiolet · тело
           </p>
           <h1 className="font-serif mt-4 max-w-3xl text-4xl leading-[0.94] sm:text-6xl md:text-7xl">
-            R-Sleek
-            <span className="mt-2 block text-[0.72em] text-[#ece6da]/80">
-              Собрать силуэт без вакуума и без простоя
-            </span>
+            Снять объём.
+            <br />
+            Оставить линию.
           </h1>
-          <p className="mt-6 max-w-lg text-[15px] leading-7 text-[#ece6da]/75 md:text-base">
-            Ротационная термокомпрессия: ролики, давление и тепло. Работаем с
-            отёком, локальными объёмами и неровным рельефом кожи.
+          <p className="mt-6 max-w-md text-[15px] leading-7 text-[#ece6da]/78 md:text-base">
+            R-Sleek собирает силуэт там, где спорт уже не берёт: живот, бока,
+            бёдра. Сорок или шестьдесят минут — и вы в том же дне, только легче.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="#formats"
+              href="#contact"
               className="rounded-full bg-[#ece6da] px-5 py-3 text-[11px] uppercase tracking-[0.2em] text-[#0b0e12]"
             >
-              40 и 60 минут
+              Записаться
             </a>
             <a
-              href="#contact"
+              href="#results"
               className="rounded-full border border-white/25 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
             >
-              Записаться
+              Смотреть до и после
             </a>
           </div>
         </div>
@@ -137,21 +142,19 @@ export default function RSleekPage() {
         <div className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-2">
           <div>
             <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-              Как это устроено
+              Аппарат
             </p>
             <h2 className="font-serif mt-3 text-4xl md:text-5xl">
-              Не вакуум. Давление и вращение.
+              Ролики вместо вакуума
             </h2>
-            <p className="mt-6 text-[15px] leading-8 text-[#ece6da]/78">
-              Манипула R-Sleek — цилиндр с несколькими рядами роликов. Она не
-              затягивает кожу, а катится с весом: компрессия плюс микровращение.
-              На скорости ролики дают лёгкий термоэффект — ткани прогреваются
-              без отдельного нагревателя.
+            <p className="mt-6 text-[15px] leading-8 text-[#ece6da]/80">
+              Манипула тяжёлая, внутри — ряды роликов. Они не затягивают кожу,
+              а катятся с давлением. На скорости появляется тепло. Так
+              прорабатывается слой, до которого руки обычно не добираются.
             </p>
-            <p className="mt-4 text-[15px] leading-8 text-[#ece6da]/78">
-              Сначала уводят жидкость по лимфатическим линиям. Затем добавляют
-              плотность на локальных зонах. Так аппарат достаёт слой, до которого
-              руки и классический роллер часто не добираются.
+            <p className="mt-4 text-[15px] leading-8 text-[#ece6da]/80">
+              Сначала уходит жидкость по лимфе. Потом плотность на локальной
+              зоне. Без синяков, из‑за которых нельзя надеть платье завтра.
             </p>
           </div>
           <div className="overflow-hidden rounded-[1.8rem] border border-white/10">
@@ -165,19 +168,21 @@ export default function RSleekPage() {
         </div>
         <div className="mx-auto mt-8 max-w-6xl">
           <PhotoSlot
-            label="крупный план манипулы в руках мастера, без стоковых улыбок"
+            src="/media/r-sleek/manipula.png"
+            alt="Манипула R-Sleek на бедре"
+            label="манипула"
             ratio="wide"
           />
         </div>
       </section>
 
-      <section id="effect" className="px-5 pb-20 md:px-6 md:pb-28">
+      <section id="effect" className="px-5 pb-20 md:px-6 md:pb-24">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-            Зачем идти
+            Зачем приходить
           </p>
           <h2 className="font-serif mt-3 max-w-2xl text-4xl md:text-5xl">
-            Четыре задачи, с которыми методика реально работает
+            Четыре сдвига, которые видно в одежде
           </h2>
           <div className="mt-12 grid gap-px overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/10 md:grid-cols-2">
             {effects.map((item) => (
@@ -189,11 +194,32 @@ export default function RSleekPage() {
               </article>
             ))}
           </div>
-          <p className="mt-8 max-w-2xl text-sm leading-7 text-[#ece6da]/50">
-            Первый сеанс чаще всего снимает пастозность. Минус на весах за курс
-            бывает, но это не тариф и не гарантия: зависит от исходных объёмов,
-            воды, питания и того, ходите ли вы серией, а не раз в месяц.
+        </div>
+      </section>
+
+      <section id="results" className="px-5 pb-20 md:px-6 md:pb-28">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            До и после
           </p>
+          <h2 className="font-serif mt-3 max-w-2xl text-4xl md:text-5xl">
+            Одна поза. Один свет. Разная история тела.
+          </h2>
+          <p className="mt-5 max-w-xl text-sm leading-7 text-[#ece6da]/60">
+            Сюда встанут ваши кадры курса. Снимать лучше в кабинете, без фильтров
+            и втягивания живота — иначе сравнение врёт.
+          </p>
+          <div className="mt-10 space-y-8">
+            {pairs.map((pair) => (
+              <div key={pair.zone}>
+                <p className="mb-3 font-serif text-2xl">{pair.zone}</p>
+                <div className="grid gap-3 md:grid-cols-2">
+                  <PhotoSlot label={`до · ${pair.need}`} />
+                  <PhotoSlot label={`после · тот же ракурс`} />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -202,9 +228,7 @@ export default function RSleekPage() {
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
             Зоны
           </p>
-          <h2 className="font-serif mt-3 text-4xl md:text-5xl">
-            Где прорабатываем
-          </h2>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">Куда ставим манипулу</h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {zones.map((zone) => (
               <div key={zone.name}>
@@ -219,30 +243,28 @@ export default function RSleekPage() {
       <section id="formats" className="px-5 py-8 md:px-6 md:py-16">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-            Форматы
+            Слоты
           </p>
           <h2 className="font-serif mt-3 text-4xl md:text-5xl">
-            Два слота в расписании
+            Сорок минут или час
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             <article className="rounded-[1.8rem] border border-white/10 p-8">
               <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
-                Фокус
+                Точечно
               </p>
               <h3 className="font-serif mt-3 text-5xl">40 мин</h3>
               <p className="mt-5 text-sm leading-7 text-[#ece6da]/70">
-                Одна–две приоритетные зоны. Если нужно встроиться в день и не
-                разбирать всё тело целиком.
+                Одна зона, которой мало в зеркале. Вмещается в обеденный разрыв.
               </p>
             </article>
             <article className="rounded-[1.8rem] border border-[#8fa08c]/30 bg-[#141a16] p-8">
               <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
-                Объём
+                Курс
               </p>
               <h3 className="font-serif mt-3 text-5xl">60 мин</h3>
               <p className="mt-5 text-sm leading-7 text-[#ece6da]/70">
-                Несколько участков за визит: живот и бока плюс бёдра или спина.
-                Для курса обычно этого слота достаточно.
+                Живот и бока плюс бёдра или спина. Этот слот обычно берут на серию.
               </p>
             </article>
           </div>
@@ -250,29 +272,29 @@ export default function RSleekPage() {
       </section>
 
       <section id="course" className="px-5 py-16 md:px-6 md:py-24">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
             <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-              Курс
+              Ритм
             </p>
             <h2 className="font-serif mt-3 text-4xl md:text-5xl">
-              Имеет смысл ходить серией
+              Тело отвечает на серию, не на подвиг
             </h2>
             <p className="mt-6 text-[15px] leading-8 text-[#ece6da]/78">
-              Разовый сеанс — чтобы понять ощущения и увидеть, как тело отдаёт
-              жидкость. Курс — чтобы рельеф и объёмы успели сложиться. Между
-              визитами оставляем день-два: лимфе нужно время.
+              Раза хватает, чтобы почувствовать отток. Линия держится, когда
+              сеансы идут волной: через день, две–три недели подряд. Потом —
+              редкая поддержка, не новый марафон.
             </p>
             <dl className="mt-10 grid gap-6 sm:grid-cols-3">
               <div>
                 <dt className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
-                  Минимум
+                  Проба
                 </dt>
                 <dd className="font-serif mt-2 text-3xl">6 сеансов</dd>
               </div>
               <div>
                 <dt className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
-                  Рабочий курс
+                  Курс
                 </dt>
                 <dd className="font-serif mt-2 text-3xl">10–12</dd>
               </div>
@@ -280,12 +302,12 @@ export default function RSleekPage() {
                 <dt className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
                   Пауза
                 </dt>
-                <dd className="font-serif mt-2 text-3xl">1–3 дня</dd>
+                <dd className="font-serif mt-2 text-3xl">через день</dd>
               </div>
             </dl>
           </div>
           <PhotoSlot
-            label="кабинет целиком: кушетка, аппарат, свет. Пустой кадр без людей"
+            label="кабинет: кушетка, аппарат с синей подсветкой, без людей"
             ratio="portrait"
           />
         </div>
@@ -296,9 +318,7 @@ export default function RSleekPage() {
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
             Визит
           </p>
-          <h2 className="font-serif mt-3 text-4xl md:text-5xl">
-            Как проходит час
-          </h2>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">Что будет в кабинете</h2>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {steps.map((step) => (
               <article key={step.n} className="border-t border-white/12 pt-5">
@@ -318,21 +338,17 @@ export default function RSleekPage() {
       <section id="faq" className="px-5 pb-16 md:px-6">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-            Вопросы
+            Коротко
           </p>
-          <h2 className="font-serif mt-3 text-4xl md:text-5xl">До записи</h2>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">До того как лечь</h2>
           <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
             {faqs.map((item) => (
               <details key={item.q} className="group py-5">
-                <summary className="cursor-pointer list-none font-serif text-[1.6rem] leading-tight">
+                <summary className="cursor-pointer list-none font-serif text-[1.55rem] leading-tight">
                   <span className="flex items-start justify-between gap-6">
                     {item.q}
-                    <span className="mt-1 text-[#8fa08c] group-open:hidden">
-                      +
-                    </span>
-                    <span className="mt-1 hidden text-[#8fa08c] group-open:inline">
-                      –
-                    </span>
+                    <span className="mt-1 text-[#8fa08c] group-open:hidden">+</span>
+                    <span className="mt-1 hidden text-[#8fa08c] group-open:inline">–</span>
                   </span>
                 </summary>
                 <p className="mt-3 max-w-3xl text-sm leading-7 text-[#ece6da]/68">
@@ -346,12 +362,11 @@ export default function RSleekPage() {
 
       <section className="px-5 pb-16 md:px-6">
         <div className="mx-auto max-w-6xl rounded-[1.8rem] border border-white/10 px-6 py-8 md:px-10">
-          <h2 className="font-serif text-3xl">Когда не делаем</h2>
+          <h2 className="font-serif text-3xl">Не берём на процедуру</h2>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-[#ece6da]/68">
-            Беременность и первые месяцы после родов, температура и острые
-            инфекции, повреждения кожи в зоне, тромбофлебит, обострение
-            сердечно-сосудистых и мочеполовых заболеваний, онкология,
-            кардиостимулятор. Если есть сомнение — сначала врач, потом кушетка.
+            Беременность и ранний послеродовый период, температура, раны и
+            воспаления на коже, тромбофлебит, обострение сердца и почек,
+            онкология, кардиостимулятор. Сомнение — сначала врач.
           </p>
         </div>
       </section>
@@ -362,18 +377,18 @@ export default function RSleekPage() {
             Запись
           </p>
           <h2 className="font-serif mt-3 max-w-xl text-4xl md:text-5xl">
-            Начните с одного сеанса, курс соберём по телу
+            Первый сеанс покажет, как отвечает ваше тело
           </h2>
           <p className="mt-5 max-w-lg text-sm leading-7 text-[#ece6da]/65">
-            Телефон и мессенджер появятся здесь. Пока можно написать, какой слот
-            нужен: 40 или 60 минут.
+            Напишите, какой слот нужен — 40 или 60 минут. Телефон появится здесь,
+            как только пришлёте номер.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#formats"
               className="rounded-full bg-[#ece6da] px-5 py-3 text-[11px] uppercase tracking-[0.2em] text-[#0b0e12]"
             >
-              Выбрать формат
+              Выбрать слот
             </a>
             <a
               href="/"
