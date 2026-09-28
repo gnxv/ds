@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { BackgroundVideo } from "@/components/r-sleek/Media";
 import { services, site } from "@/lib/site";
 
 type Side = "solarium" | "rsleek" | null;
@@ -30,6 +31,8 @@ export function SplitGateway() {
           title={services.solarium.name}
           line="Ровный тон за один визит."
           tone="sun"
+          video="/media/solarium/home.mp4"
+          poster="/media/solarium/home.jpg"
           expanded={hover === "solarium"}
           dimmed={hover === "rsleek"}
           onEnter={() => setHover("solarium")}
@@ -41,6 +44,8 @@ export function SplitGateway() {
           title={services.rsleek.name}
           line="Минус объёмы и более собранный силуэт."
           tone="sculpt"
+          video="/media/r-sleek/manipula.mp4"
+          poster="/media/r-sleek/manipula-poster.jpg"
           expanded={hover === "rsleek"}
           dimmed={hover === "solarium"}
           onEnter={() => setHover("rsleek")}
@@ -57,6 +62,8 @@ function GatewayPanel({
   title,
   line,
   tone,
+  video,
+  poster,
   expanded,
   dimmed,
   onEnter,
@@ -67,6 +74,8 @@ function GatewayPanel({
   title: string;
   line: string;
   tone: "sun" | "sculpt";
+  video: string;
+  poster: string;
   expanded: boolean;
   dimmed: boolean;
   onEnter: () => void;
@@ -84,25 +93,25 @@ function GatewayPanel({
       className={[
         "group grain relative flex min-h-[50dvh] flex-1 flex-col justify-end overflow-hidden px-8 py-16 transition-all duration-700 ease-[cubic-bezier(.22,1,.36,1)] md:min-h-dvh md:px-14 md:py-20",
         expanded ? "md:flex-[1.28]" : dimmed ? "md:flex-[0.86]" : "md:flex-1",
-        isSun
-          ? "bg-[radial-gradient(120%_90%_at_20%_10%,#4a2a14_0%,#160e09_55%,#0b0705_100%)]"
-          : "bg-[radial-gradient(120%_90%_at_80%_10%,#243028_0%,#0b0e12_55%,#07080a_100%)]",
+        isSun ? "bg-[#160e09]" : "bg-[#0b0e12]",
       ].join(" ")}
     >
       <div
         className={[
           "absolute inset-0 transition-opacity duration-700",
-          dimmed ? "opacity-40" : "opacity-100",
+          dimmed ? "opacity-35" : "opacity-100",
         ].join(" ")}
-      />
-
-      <div
-        className={[
-          "absolute -right-16 top-24 h-72 w-72 rounded-full blur-3xl transition-all duration-700 md:top-32",
-          isSun ? "bg-[#e0b06a]/18" : "bg-[#8fa08c]/16",
-          expanded ? "scale-125 opacity-100" : "opacity-70",
-        ].join(" ")}
-      />
+      >
+        <BackgroundVideo src={video} poster={poster} />
+        <div
+          className={
+            isSun
+              ? "absolute inset-0 bg-gradient-to-r from-black/70 via-[#160e09]/45 to-black/20"
+              : "absolute inset-0 bg-gradient-to-r from-black/75 via-[#0b0e12]/50 to-black/20"
+          }
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/25" />
+      </div>
 
       <div className="relative z-10 max-w-md">
         <p
