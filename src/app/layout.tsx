@@ -17,11 +17,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "DS — солярий и R-Sleek",
-    template: "%s · DS",
+    default: "Fiolet — солярий и R-Sleek",
+    template: "%s · Fiolet",
   },
   description:
-    "Два соседних кабинета в гостинице: солярий и процедура R-Sleek для коррекции фигуры.",
+    "Fiolet: два соседних кабинета в гостинице — солярий и процедура R-Sleek для коррекции фигуры.",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="ru"
-      className={`${manrope.variable} ${cormorant.variable} h-full antialiased`}
+      className={`${manrope.variable} ${cormorant.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full">{children}</body>
     </html>

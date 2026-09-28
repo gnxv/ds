@@ -3,6 +3,7 @@ import {
   BackgroundVideo,
   InlineVideo,
 } from "@/components/r-sleek/Media";
+import { services } from "@/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -99,7 +100,11 @@ const faqs = [
 export default function RSleekPage() {
   return (
     <div className="min-h-dvh bg-[#0b0e12] text-[#ece6da]">
-      <SiteHeader tone="sculpt" current="rsleek" />
+      <SiteHeader
+        tone="sculpt"
+        current="rsleek"
+        sections={services.rsleek.nav}
+      />
 
       <section className="relative isolate min-h-[88dvh] overflow-hidden">
         <BackgroundVideo

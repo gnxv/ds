@@ -17,7 +17,11 @@ export default function SolariumPage() {
 
   return (
     <div className="min-h-dvh bg-[#160e09] text-[#f4e6c8]">
-      <SiteHeader tone="sun" current="solarium" />
+      <SiteHeader
+        tone="sun"
+        current="solarium"
+        sections={services.solarium.nav}
+      />
       <LandingHero
         tone="sun"
         kicker={s.kicker}
