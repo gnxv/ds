@@ -32,9 +32,9 @@ export function SplitGateway() {
         />
         <GatewayPanel
           href={services.rsleek.slug}
-          kicker={services.rsleek.kicker}
+          kicker="аппаратная коррекция фигуры"
           title={services.rsleek.name}
-          line="Минус объёмы и более собранный силуэт."
+          line="Минус 800г уже после первой процедуры"
           tone="sculpt"
           video="/media/r-sleek/manipula.mp4"
           poster="/media/r-sleek/manipula-poster.jpg"
