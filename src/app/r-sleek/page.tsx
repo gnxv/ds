@@ -202,7 +202,7 @@ export default function RSleekPage() {
                 Насадка в работе
               </p>
               <h3 className="font-serif mt-3 text-3xl leading-tight">
-                Манипулу ведут по ходу оттока
+                Скорость вращения около 360–500 оборотов в минуту
               </h3>
               <p className="mt-4 text-sm leading-7 text-[#ece6da]/68">
                 Манипулу ведут по зоне непрерывным ходом — так жидкость уходит
