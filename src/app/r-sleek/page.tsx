@@ -149,7 +149,7 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <section id="method" className="px-5 py-20 md:px-6 md:py-28">
+      <section id="method" className="px-5 pb-20 md:px-6 md:pb-28">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
             Принцип
