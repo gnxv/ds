@@ -5,7 +5,7 @@ import {
   BackgroundVideo,
   InlineVideo,
 } from "@/components/r-sleek/Media";
-import { services } from "@/lib/site";
+import { services, site } from "@/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -418,6 +418,39 @@ export default function RSleekPage() {
             первой степени часто допустим — вакуум как раз противопоказан, а
             компрессия нет, но решение только после консультации.
           </p>
+        </div>
+      </section>
+
+      <section id="address" className="px-5 pb-20 md:px-6 md:pb-28">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            Адрес
+          </p>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">
+            Геленджик, Бригантина
+          </h2>
+          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
+            {site.address}
+            <br />
+            {site.addressExtra}. Два кабинета рядом: солярий и R-Sleek.
+          </p>
+          <a
+            href={site.mapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-block text-[11px] uppercase tracking-[0.2em] text-[#8fa08c]"
+          >
+            Открыть в Яндекс Картах
+          </a>
+          <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-white/10">
+            <iframe
+              title="Fiolet на Яндекс Картах"
+              src={site.mapsEmbed}
+              className="h-[22rem] w-full bg-[#10141a] md:h-[28rem]"
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
         </div>
       </section>
 

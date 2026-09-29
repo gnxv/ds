@@ -1,7 +1,13 @@
 export const site = {
   name: "Fiolet",
   tagline: "Солярий и аппаратный массаж R-Sleek. Два кабинета рядом.",
-  location: "Гостиница, соседние кабинеты",
+  location: "Геленджик, отель «Бригантина»",
+  address: "Революционная ул., 37",
+  addressExtra: "Отель «Бригантина», 1 этаж",
+  city: "Геленджик",
+  mapsUrl: "https://yandex.ru/maps/org/fiolet/108706549072/",
+  mapsEmbed:
+    "https://yandex.ru/map-widget/v1/?ol=biz&oid=108706549072&ll=38.067614%2C44.555612&z=16",
   phone: "+7 952 838-84-84",
   phoneHref: "tel:+79528388484",
   telegram: "https://t.me/+79528388484",
@@ -47,6 +53,7 @@ export const services = {
       { href: "#how", label: "Сеанс" },
       { href: "#prices", label: "Цены" },
       { href: "#faq", label: "Вопросы" },
+      { href: "#address", label: "Адрес" },
       { href: "#contact", label: "Запись" },
     ] satisfies NavLink[],
   },
