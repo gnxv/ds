@@ -111,14 +111,14 @@ export default function RSleekPage() {
         sections={services.rsleek.nav}
       />
 
-      <section className="relative isolate min-h-[92dvh] overflow-hidden">
+      <section className="relative isolate min-h-dvh overflow-hidden">
         <BackgroundVideo
           src="/media/r-sleek/hero.mp4"
           poster="/media/r-sleek/hero.jpg"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/55 to-black/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b0e12] via-transparent to-black/35" />
-        <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-5 pb-16 pt-24 md:px-6 md:pb-24">
+        <div className="relative mx-auto flex min-h-dvh max-w-6xl flex-col justify-end px-5 pb-16 pt-24 md:px-6 md:pb-20">
           <p className="text-[11px] uppercase tracking-[0.38em] text-[#8fa08c]">
             Аппаратная коррекция фигуры
           </p>
@@ -149,7 +149,7 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <section id="method" className="px-5 pb-20 md:px-6 md:pb-28">
+      <section id="method" className="px-5 pb-20 pt-16 md:px-6 md:pb-28 md:pt-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
             Принцип
