@@ -173,9 +173,10 @@ export default function RSleekPage() {
                 Ротация
               </p>
               <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
-                Десять рядов роликов идут по одной линии снова и снова. Это не
-                размазывание по поверхности: слой между кожей и мышцей
-                проминается глубже, чем успевает рука за тот же час.
+                Десять рядов роликов прокатывают подкожный слой, а не гладят
+                поверхность. Ткань смещается, разминаются уплотнения, меньше
+                заметна «апельсиновая корка». Без этого хода компрессия только
+                выгоняет воду — рельеф почти не меняется.
               </p>
             </article>
             <article className="rounded-[1.6rem] border border-white/10 p-7">
@@ -183,34 +184,34 @@ export default function RSleekPage() {
                 Термоэффект
               </p>
               <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
-                Металл по костюму нагревает участок на несколько градусов.
-                Усиливается микроциркуляция, ткань становится податливее, после
-                курса зона чаще ощущается собранной, а не рыхлой.
+                Металлическая насадка трётся о сетчатый костюм и слегка
+                прогревает зону. Сосуды открываются, ткань становится мягче,
+                роликам проще пройти глубже. Тепло здесь не «сжигает», а
+                помогает участку отдать жидкость и размяться.
               </p>
             </article>
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-[1.8rem] border border-white/10">
-            <div className="grid items-stretch lg:grid-cols-[1.15fr_0.85fr]">
-              <div className="aspect-[4/5] bg-black lg:aspect-auto lg:min-h-[34rem]">
-                <InlineVideo
-                  src="/media/r-sleek/method.mp4"
-                  poster="/media/r-sleek/method.jpg"
-                />
-              </div>
-              <div className="flex flex-col justify-end bg-[#10141a] p-7 md:p-10">
-                <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
-                  Насадка в работе
-                </p>
-                <h3 className="font-serif mt-3 text-3xl">
-                  Мастер ведёт цилиндр, аппарат задаёт частоту
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[#ece6da]/68">
-                  Скорость роликов меняется по зоне: живот и руки — спокойнее,
-                  бёдра и ягодицы — плотнее. Ориентир не максимальные обороты, а
-                  то, как ткань принимает давление.
-                </p>
-              </div>
+          <div className="mt-10 grid items-center gap-8 overflow-hidden rounded-[1.8rem] border border-white/10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="aspect-[3/2] bg-black">
+              <InlineVideo
+                src="/media/r-sleek/method.mp4"
+                poster="/media/r-sleek/method.jpg"
+              />
+            </div>
+            <div className="px-7 py-7 md:px-10 md:py-8">
+              <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
+                Насадка в работе
+              </p>
+              <h3 className="font-serif mt-3 text-3xl leading-tight">
+                Цилиндр ведут по зоне, не ставят на место
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-[#ece6da]/68">
+                Мастер задаёт траекторию и силу, аппарат крутит ролики. Живот и
+                руки — спокойнее, бёдра и ягодицы — плотнее. Рабочее ощущение —
+                давление и тепло. Если появляется резкая боль, скорость
+                снижают.
+              </p>
             </div>
           </div>
         </div>
