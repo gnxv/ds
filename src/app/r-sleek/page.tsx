@@ -13,29 +13,6 @@ export const metadata: Metadata = {
     "R-Sleek в Fiolet: минус объёмы, меньше отёка, более подтянутый силуэт. После первого сеанса уходит до 800 г жидкости. 40 и 60 минут.",
 };
 
-const session = [
-  {
-    n: "01",
-    title: "Короткий разбор тела",
-    text: "Какие зоны мешают в одежде, были ли операции, варикоз, беременность, боли. Если есть сомнение — процедуру не делаем и отправляем к врачу.",
-  },
-  {
-    n: "02",
-    title: "Лимфа силиконом",
-    text: "Сначала масло и силиконовая насадка. Задача не «разбить бока», а открыть отток. Без этого шага локальная работа даёт меньше и держится хуже.",
-  },
-  {
-    n: "03",
-    title: "Зона металлом",
-    text: "Надеваете тонкий костюм. Мастер ведёт цилиндр по выбранным линиям, скорость подбирается по ощущению: должно быть плотно и тепло, не больно.",
-  },
-  {
-    n: "04",
-    title: "Выход без восстановления",
-    text: "Синяков от вакуума нет — кожа не втягивается. После сеанса можно идти дальше по дню. Вода, без сауны и солярия в эти же часы.",
-  },
-];
-
 const faqs = [
   {
     q: "Чем R-Sleek отличается от LPG и банок?",
@@ -253,34 +230,10 @@ export default function RSleekPage() {
 
       <section id="how" className="px-5 pb-20 md:px-6 md:pb-28">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-            Сеанс
-          </p>
-          <h2 className="font-serif mt-3 text-4xl md:text-5xl">
-            Что происходит в кабинете
-          </h2>
-          <div className="mt-12 grid gap-10 md:grid-cols-2">
-            {session.map((step) => (
-              <article key={step.n} className="border-t border-white/12 pt-5">
-                <p className="text-[11px] uppercase tracking-[0.24em] text-[#8fa08c]">
-                  {step.n}
-                </p>
-                <h3 className="font-serif mt-3 text-2xl">{step.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#ece6da]/68">
-                  {step.text}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="formats" className="px-5 pb-20 md:px-6 md:pb-28">
-        <div className="mx-auto max-w-6xl">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-                Слоты
+                Сеанс
               </p>
               <h2 className="font-serif mt-3 text-4xl md:text-5xl">
                 40 или 60 минут
@@ -290,24 +243,6 @@ export default function RSleekPage() {
                 вернуться к делам. Час — если зон несколько и нужна более
                 плотная работа.
               </p>
-              <ul className="mt-8 space-y-2 text-sm text-[#ece6da]/80">
-                {[
-                  "Живот и талия",
-                  "Бока",
-                  "Бёдра",
-                  "Ягодицы",
-                  "Руки",
-                  "Поясница и спина",
-                ].map((zone) => (
-                  <li
-                    key={zone}
-                    className="flex items-center gap-3 border-b border-white/8 py-2"
-                  >
-                    <span className="h-px w-6 bg-[#8fa08c]" />
-                    {zone}
-                  </li>
-                ))}
-              </ul>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 sm:items-start">
               <article className="rounded-[1.8rem] border border-white/10 p-7">
