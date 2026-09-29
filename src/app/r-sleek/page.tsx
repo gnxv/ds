@@ -207,24 +207,46 @@ export default function RSleekPage() {
             Процедура
           </p>
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
-            Две фазы вместо обычного роликового массажа
+            Сначала отток, потом зона
           </h2>
 
-          <div className="mt-10 grid items-center gap-8 overflow-hidden rounded-[1.8rem] border border-white/10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="mt-10 grid items-center gap-8 overflow-hidden rounded-[1.8rem] border border-white/10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="px-7 py-7 md:px-10 md:py-8">
+              <p className="text-sm leading-7 text-[#ece6da]/68">
+                Обычный роликовый массаж идёт одной насадкой. R-Sleek — двумя
+                фазами. Меняется цилиндр, не кабинет.
+              </p>
+              <div className="mt-6 space-y-5">
+                <div>
+                  <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                    Фаза 1 · силикон по маслу
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-[#ece6da]/68">
+                    Лимфоузлы, отток лимфы и межтканевой жидкости, лёгкий
+                    пилинг, подготовка тканей.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                    Фаза 2 · металл по костюму
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-[#ece6da]/68">
+                    Живот, бока, бёдра, ягодицы, руки, спина. Глубже механика и
+                    тепло: металл трётся о ткань, кожу маслом на этой фазе не
+                    трогают.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-6 text-sm leading-7 text-[#ece6da]/55">
+                Костюм нужен не только для гигиены. Если полная схема не нужна —
+                оставляем одну фазу.
+              </p>
+            </div>
             <div className="aspect-[3/2] bg-black">
               <InlineVideo
                 src="/media/r-sleek/manipula.mp4"
                 poster="/media/r-sleek/manipula-poster.jpg"
               />
-            </div>
-            <div className="px-7 py-7 md:px-10 md:py-8">
-              <p className="text-sm leading-7 text-[#ece6da]/68">
-                Сначала Silicon Power по маслу: лимфоузлы, отток жидкости,
-                лёгкий пилинг, подготовка тканей. Затем Metallic Touch по
-                костюму — живот, бока, бёдра, ягодицы, руки, спина. Металл
-                трётся о ткань, даёт тепло и глубже берёт зону; кожу маслом на
-                второй фазе не трогают. Есть и однофазные протоколы.
-              </p>
             </div>
           </div>
         </div>
