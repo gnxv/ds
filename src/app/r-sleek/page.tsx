@@ -1,4 +1,5 @@
 import { SiteFooter, SiteHeader } from "@/components/layout/SiteChrome";
+import { BeforeAfter } from "@/components/r-sleek/BeforeAfter";
 import {
   BackgroundVideo,
   InlineVideo,
@@ -11,25 +12,6 @@ export const metadata: Metadata = {
   description:
     "R-Sleek в Fiolet: минус объёмы, меньше отёка, более подтянутый силуэт. После первого сеанса уходит до 800 г жидкости. 40 и 60 минут.",
 };
-
-const indications = [
-  {
-    title: "Визуальные объёмы",
-    text: "Живот, бока, бёдра и ягодицы. Те зоны, которые чаще всего хочется увидеть стройнее в одежде — даже если вес на весах почти не меняется.",
-  },
-  {
-    title: "Отёк и тяжесть",
-    text: "Уже после первой процедуры из организма может уйти до 800 г жидкости. Меньше пастозности, спокойнее линия, тело ощущается легче в тот же день.",
-  },
-  {
-    title: "Целлюлит и рельеф",
-    text: "Ролики работают не только с водой. Курс уменьшает проявления целлюлита и делает поверхность бедра и ягодиц визуально более гладкой.",
-  },
-  {
-    title: "Силуэт и кожа",
-    text: "Контур собирается, кожа выглядит ухоженнее. Это не «пресс за час», а более подтянутая форма тех зон, которые проработали.",
-  },
-];
 
 const session = [
   {
@@ -254,23 +236,17 @@ export default function RSleekPage() {
             Результат
           </p>
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
-            Что меняется в теле
+            Что видно после процедуры
           </h2>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/10 md:grid-cols-2">
-            {indications.map((item) => (
-              <article key={item.title} className="bg-[#0b0e12] p-7 md:p-8">
-                <h3 className="font-serif text-2xl">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#ece6da]/68">
-                  {item.text}
-                </p>
-              </article>
-            ))}
-          </div>
-          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#ece6da]/55">
-            Первая процедура — про жидкость и ощущение лёгкости. Курс нужен,
-            чтобы объём, рельеф и силуэт держались, а не вернулись к вечеру
-            пятницы.
+          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
+            После первого сеанса уходит до 800&nbsp;г жидкости: меньше отёка,
+            тело легче уже в тот же день. На курсе собираются живот, бока,
+            бёдра и ягодицы, спокойнее целлюлит. На весах бывает минус
+            5–8&nbsp;кг — зависит от исходных параметров.
           </p>
+          <div className="mt-10">
+            <BeforeAfter />
+          </div>
         </div>
       </section>
 
