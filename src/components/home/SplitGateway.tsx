@@ -34,7 +34,7 @@ export function SplitGateway() {
           href={services.rsleek.slug}
           kicker="аппаратная коррекция фигуры"
           title={services.rsleek.name}
-          line="Минус 800г уже после первой процедуры."
+          line="Минус 800 г уже после первой процедуры."
           tone="sculpt"
           video="/media/r-sleek/manipula.mp4"
           poster="/media/r-sleek/manipula-poster.jpg"
