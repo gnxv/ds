@@ -75,15 +75,14 @@ export default function SolariumPage() {
           <p className="text-[11px] uppercase tracking-[0.38em] text-[#e0b06a]">
             Солярий
           </p>
-          <h1 className="font-serif mt-4 max-w-4xl text-4xl leading-[0.96] sm:text-6xl md:text-7xl">
-            Ровный тон
-            <br />
-            за один визит.
+          <h1 className="font-serif mt-4 max-w-5xl text-4xl leading-[1.02] sm:text-5xl md:text-6xl">
+            Ровный загар в удобное время и в контролируемых условиях.
           </h1>
           <p className="mt-6 max-w-xl text-[16px] leading-8 text-[#f4e6c8]/82 md:text-[17px]">
             Вертикальная кабина и премиум-косметика для загара. Цвет ложится
-            ровно, без границы купальника. Время подбираем под кожу, не «на
-            максимум».
+            ровно, без границы купальника. Подберём время сеанса под ваш
+            фототип, объясним правила и поможем ухаживать за кожей до и после
+            процедуры.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -96,7 +95,7 @@ export default function SolariumPage() {
               href="#prices"
               className="rounded-full border border-[#e0b06a]/40 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
             >
-              Смотреть минуты
+              Цены
             </a>
           </div>
         </div>
