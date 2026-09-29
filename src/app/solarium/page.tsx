@@ -103,20 +103,21 @@ export default function SolariumPage() {
       </section>
 
       <section id="about" className="px-5 pb-20 pt-16 md:px-6 md:pb-28 md:pt-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#e0b06a]">
-            Кабинет
-          </p>
-          <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
-            Стоите, не лежите
-          </h2>
-          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#f4e6c8]/72">
-            Вертикальная кабина. Сеанс короткий: зашли, выбрали минуты, вышли с
-            ровным тоном. Соседняя дверь — R-Sleek, но в один день эти процедуры
-            не ставим.
-          </p>
-
-          <div className="mt-10 grid max-w-3xl grid-cols-2 gap-3">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.32em] text-[#e0b06a]">
+              Кабинет
+            </p>
+            <h2 className="font-serif mt-3 text-4xl md:text-5xl">
+              Стоите, не лежите
+            </h2>
+            <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#f4e6c8]/72">
+              Вертикальная кабина. Сеанс короткий: зашли, выбрали минуты, вышли
+              с ровным тоном. Соседняя дверь — R-Sleek, но в один день эти
+              процедуры не ставим.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
             <div className="overflow-hidden rounded-[1.2rem] border border-[#e0b06a]/20 bg-black">
               <div className="aspect-[3/4]">
                 <InlineVideo
@@ -144,42 +145,35 @@ export default function SolariumPage() {
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
             Премиум-средства для загара
           </h2>
-          <div className="mt-10 max-w-xl overflow-hidden rounded-[1.2rem] border border-[#e0b06a]/20 bg-black">
-            <div className="aspect-[16/9]">
-              <InlineVideo
-                src="/media/solarium/cabin.mp4"
-                poster="/media/solarium/cabin.jpg"
-              />
+          <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-2">
+            <div className="grid gap-4">
+              <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#e0b06a]">
+                  До сеанса
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#f4e6c8]/72">
+                  Ускорители и кремы под тип кожи. Цвет берётся быстрее и
+                  ложится ровнее, кожа не сушится насухую.
+                </p>
+              </article>
+              <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#e0b06a]">
+                  После
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#f4e6c8]/72">
+                  Уход, который фиксирует тон и снимает ощущение стянутости.
+                  Загар держится дольше, если не забывать про него дома.
+                </p>
+              </article>
             </div>
-          </div>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#e0b06a]">
-                До сеанса
-              </p>
-              <p className="mt-4 text-sm leading-7 text-[#f4e6c8]/72">
-                Ускорители и кремы под тип кожи. Цвет берётся быстрее и ложится
-                ровнее, кожа не сушится насухую.
-              </p>
-            </article>
-            <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#e0b06a]">
-                После
-              </p>
-              <p className="mt-4 text-sm leading-7 text-[#f4e6c8]/72">
-                Уход, который фиксирует тон и снимает ощущение стянутости.
-                Загар держится дольше, если не забывать про него дома.
-              </p>
-            </article>
-            <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#e0b06a]">
-                В кабинете
-              </p>
-              <p className="mt-4 text-sm leading-7 text-[#f4e6c8]/72">
-                Линейка уже стоит в солярии. Своё средство можно принести — не
-                обязательно покупать на месте.
-              </p>
-            </article>
+            <div className="overflow-hidden rounded-[1.6rem] border border-[#e0b06a]/20 bg-black">
+              <div className="h-full min-h-[16rem]">
+                <InlineVideo
+                  src="/media/solarium/cabin.mp4"
+                  poster="/media/solarium/cabin.jpg"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
