@@ -7,7 +7,7 @@ export const site = {
   city: "Геленджик",
   mapsUrl: "https://yandex.ru/maps/org/fiolet/108706549072/",
   mapsEmbed:
-    "https://yandex.ru/map-widget/v1/?ll=38.067614%2C44.555612&z=16&pt=38.067614,44.555612,pm2rdm",
+    "https://yandex.ru/map-widget/v1/?ll=38.067614%2C44.555612&z=16&ol=biz&oid=108706549072",
   phone: "+7 952 838-84-84",
   phoneHref: "tel:+79528388484",
   telegram: "https://t.me/+79528388484",
