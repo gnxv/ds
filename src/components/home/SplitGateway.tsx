@@ -21,7 +21,7 @@ export function SplitGateway() {
           href={services.solarium.slug}
           kicker={services.solarium.kicker}
           title={services.solarium.name}
-          line="Ровный тон за один визит."
+          line="Ровный тон в удобное время."
           tone="sun"
           video="/media/solarium/home.mp4"
           poster="/media/solarium/home.jpg"
