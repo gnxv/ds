@@ -35,7 +35,7 @@ export const services = {
     nav: [
       { href: "#about", label: "Кабинет" },
       { href: "#care", label: "Косметика" },
-      { href: "#gallery", label: "Фото" },
+      { href: "#gallery", label: "Клиенты" },
       { href: "#prices", label: "Цены" },
       { href: "#faq", label: "Вопросы" },
       { href: "#contact", label: "Запись" },
