@@ -34,9 +34,12 @@ export const services = {
     lead: "Короткий сеанс света — и тон ровный, без границы купальника и без истории «я неделю жила на пляже».",
     nav: [
       { href: "#about", label: "Кабинет" },
-      { href: "#offer", label: "Форматы" },
-      { href: "#faq", label: "FAQ" },
+      { href: "#care", label: "Косметика" },
+      { href: "#gallery", label: "Фото" },
+      { href: "#prices", label: "Цены" },
+      { href: "#faq", label: "Вопросы" },
       { href: "#contact", label: "Запись" },
+      { href: "#address", label: "Адрес" },
     ] satisfies NavLink[],
   },
   rsleek: {
