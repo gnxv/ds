@@ -29,12 +29,13 @@ export function SiteFooter({ tone }: { tone: Tone }) {
           <Link href="/" className="font-serif text-2xl tracking-[0.2em]">
             {site.name}
           </Link>
-          <p className={`mt-2 text-sm ${t.muted}`}>{site.location}</p>
+          <p className={`mt-2 whitespace-pre-line text-sm ${t.muted}`}>
+            {site.location}
+          </p>
         </div>
         <nav className={`flex flex-wrap gap-x-6 gap-y-2 text-sm ${t.muted}`}>
           <Link href="/solarium">Солярий</Link>
           <Link href="/r-sleek">R-Sleek</Link>
-          <a href="#contact">Запись</a>
         </nav>
         <div className={`text-sm ${t.muted}`}>
           <a href={site.phoneHref}>{site.phone}</a>
