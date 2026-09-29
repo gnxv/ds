@@ -24,15 +24,15 @@ const faqs = [
   },
   {
     q: "Сколько длится сеанс?",
-    a: "Два варианта. 40 минут на одну зону и 60 минут, если берём две связанные области — например живот с боками и бёдра.",
+    a: "Два варианта. 40 минут если хотите уделить фигуре внимание и сразу вернуться к делам. И 60 минут, когда нужна более комплексная работа с силуэтом.",
   },
   {
     q: "Как часто приходить?",
-    a: "Рабочий ритм — через день или два. Курс 8–12 сеансов. Первые три лучше не растягивать: так видно, как отвечает именно ваше тело. Дальше поддержка раз в две–четыре недели.",
+    a: "Рабочий ритм — через день или два. Курс 5–10 сеансов.",
   },
   {
     q: "Будет ли больно?",
-    a: "Не должно. Нормальное ощущение — глубокий массаж и тепло. Скорость роликов крутится под вас. Если просить максимальный режим «чтобы подействовало», вечером будет крепатура. Это не критерий качества.",
+    a: "Нет. Ощущения: многие описывают как приятное глубокое разминание, «как после хорошей тренировки», тепло, без боли.",
   },
   {
     q: "Зачем костюм?",
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Можно в тот же день в солярий?",
-    a: "Не стоит. После плотной проработки кожу не греем лампами. Солярий — соседнее помещение, записываем отдельным слотом на другой день.",
+    a: "Не стоит. Лучше перенести на другой день.",
   },
   {
     q: "Что делать до и после?",
@@ -319,10 +319,6 @@ export default function RSleekPage() {
           <h2 className="font-serif mt-3 text-4xl md:text-5xl">
             Разово и абонементом
           </h2>
-          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
-            Цифры пока ориентир. Точную стоимость подтвердим при записи.
-          </p>
-
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
             <article className="rounded-[1.6rem] border border-white/10 p-7 md:p-8">
               <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
@@ -333,7 +329,7 @@ export default function RSleekPage() {
                   <div>
                     <p className="font-serif text-2xl">40 минут</p>
                     <p className="mt-1 text-sm text-[#ece6da]/55">
-                      Одна–две зоны
+                      1 процедура
                     </p>
                   </div>
                   <p className="font-serif text-3xl">3 500 ₽</p>
@@ -342,10 +338,10 @@ export default function RSleekPage() {
                   <div>
                     <p className="font-serif text-2xl">60 минут</p>
                     <p className="mt-1 text-sm text-[#ece6da]/55">
-                      Несколько зон
+                      1 процедура
                     </p>
                   </div>
-                  <p className="font-serif text-3xl">4 800 ₽</p>
+                  <p className="font-serif text-3xl">4 000 ₽</p>
                 </div>
               </div>
             </article>
@@ -357,30 +353,21 @@ export default function RSleekPage() {
               <div className="mt-8 space-y-5">
                 <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
                   <div>
-                    <p className="font-serif text-2xl">6 сеансов</p>
+                    <p className="font-serif text-2xl">5 процедур</p>
                     <p className="mt-1 text-sm text-[#ece6da]/55">
-                      40 мин · 3 150 ₽ за визит
+                      40 мин · 3 000 ₽ за визит
                     </p>
                   </div>
-                  <p className="font-serif text-3xl">18 900 ₽</p>
-                </div>
-                <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
-                  <div>
-                    <p className="font-serif text-2xl">10 сеансов</p>
-                    <p className="mt-1 text-sm text-[#ece6da]/55">
-                      40 мин · 2 900 ₽ за визит
-                    </p>
-                  </div>
-                  <p className="font-serif text-3xl">29 000 ₽</p>
+                  <p className="font-serif text-3xl">15 000 ₽</p>
                 </div>
                 <div className="flex items-end justify-between gap-4">
                   <div>
-                    <p className="font-serif text-2xl">10 сеансов</p>
+                    <p className="font-serif text-2xl">10 процедур</p>
                     <p className="mt-1 text-sm text-[#ece6da]/55">
-                      60 мин · 3 900 ₽ за визит
+                      40 мин · 2 500 ₽ за визит
                     </p>
                   </div>
-                  <p className="font-serif text-3xl">39 000 ₽</p>
+                  <p className="font-serif text-3xl">25 000 ₽</p>
                 </div>
               </div>
             </article>
