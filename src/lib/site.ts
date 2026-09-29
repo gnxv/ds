@@ -37,8 +37,8 @@ export const services = {
     headline: "Минус объёмы и более подтянутый силуэт.",
     lead: "Роликовый массаж R-Sleek: меньше отёка, спокойнее целлюлит, собраннее живот, бока, бёдра и ягодицы.",
     nav: [
-      { href: "#about", label: "Процедура" },
       { href: "#method", label: "Принцип" },
+      { href: "#about", label: "Процедура" },
       { href: "#effect", label: "Результат" },
       { href: "#how", label: "Сеанс" },
       { href: "#formats", label: "Форматы" },

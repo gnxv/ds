@@ -149,48 +149,7 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <section id="about" className="px-5 py-20 md:px-6 md:py-28">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-              Процедура
-            </p>
-            <h2 className="font-serif mt-3 text-4xl leading-[1.05] md:text-5xl">
-              Для тех, кто хочет увидеть тело стройнее
-            </h2>
-            <div className="mt-6 space-y-5 text-[15px] leading-8 text-[#ece6da]/80">
-              <p>
-                R-Sleek — аппаратный роликовый массаж. Идут за меньшими
-                объёмами, за лёгкостью вместо отёка и за более подтянутым
-                силуэтом. Не за «сжечь жир за сеанс», а за тело, которое в
-                одежде и в зеркале выглядит собраннее.
-              </p>
-              <p>
-                Рабочий инструмент — цилиндрическая манипула примерно на два
-                килограмма с десятью рядами роликов. Кожу не засасывают:
-                давление идёт от веса насадки, движение — от вращения, тепло —
-                от металла по костюму. Поэтому синяков, из‑за которых нельзя
-                надеть платье завтра, обычно нет.
-              </p>
-              <p>
-                Кабинет в гостинице, дверь в дверь с солярием. Один человек,
-                один слот. Начать можно с одной процедуры — чтобы почувствовать
-                разницу. Выраженный результат собирается курсом.
-              </p>
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-[1.8rem] border border-white/10 bg-black">
-            <div className="aspect-[3/2]">
-              <InlineVideo
-                src="/media/r-sleek/manipula.mp4"
-                poster="/media/r-sleek/manipula-poster.jpg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="method" className="px-5 pb-20 md:px-6 md:pb-28">
+      <section id="method" className="px-5 py-20 md:px-6 md:py-28">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
             Принцип
@@ -206,7 +165,7 @@ export default function RSleekPage() {
               <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
                 Вес манипулы выталкивает застоявшуюся жидкость из тканей в
                 лимфатическое русло. Отсюда ощущение лёгкости в тот же вечер и
-                минус в сантиметрах, который часто путают с «сгоревшим жиром».
+                минус в сантиметрах.
               </p>
             </article>
             <article className="rounded-[1.6rem] border border-white/10 p-7">
@@ -252,6 +211,47 @@ export default function RSleekPage() {
                   то, как ткань принимает давление.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="px-5 pb-20 md:px-6 md:pb-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+              Процедура
+            </p>
+            <h2 className="font-serif mt-3 text-4xl leading-[1.05] md:text-5xl">
+              Для тех, кто хочет увидеть тело стройнее
+            </h2>
+            <div className="mt-6 space-y-5 text-[15px] leading-8 text-[#ece6da]/80">
+              <p>
+                R-Sleek — аппаратный роликовый массаж. Идут за меньшими
+                объёмами, за лёгкостью вместо отёка и за более подтянутым
+                силуэтом. Не за «сжечь жир за сеанс», а за тело, которое в
+                одежде и в зеркале выглядит собраннее.
+              </p>
+              <p>
+                Рабочий инструмент — цилиндрическая манипула примерно на два
+                килограмма с десятью рядами роликов. Кожу не засасывают:
+                давление идёт от веса насадки, движение — от вращения, тепло —
+                от металла по костюму. Поэтому синяков, из‑за которых нельзя
+                надеть платье завтра, обычно нет.
+              </p>
+              <p>
+                Кабинет в гостинице, дверь в дверь с солярием. Один человек,
+                один слот. Начать можно с одной процедуры — чтобы почувствовать
+                разницу. Выраженный результат собирается курсом.
+              </p>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-[1.8rem] border border-white/10 bg-black">
+            <div className="aspect-[3/2]">
+              <InlineVideo
+                src="/media/r-sleek/manipula.mp4"
+                poster="/media/r-sleek/manipula-poster.jpg"
+              />
             </div>
           </div>
         </div>
