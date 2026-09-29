@@ -203,7 +203,14 @@ export default function RSleekPage() {
 
       <section id="about" className="px-5 pb-20 md:px-6 md:pb-28">
         <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-8 overflow-hidden rounded-[1.8rem] border border-white/10 lg:grid-cols-[1.1fr_0.9fr]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            Процедура
+          </p>
+          <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
+            Две фазы вместо обычного роликового массажа
+          </h2>
+
+          <div className="mt-10 grid items-center gap-8 overflow-hidden rounded-[1.8rem] border border-white/10 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="aspect-[3/2] bg-black">
               <InlineVideo
                 src="/media/r-sleek/manipula.mp4"
@@ -211,13 +218,7 @@ export default function RSleekPage() {
               />
             </div>
             <div className="px-7 py-7 md:px-10 md:py-8">
-              <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
-                Процедура
-              </p>
-              <h2 className="font-serif mt-3 text-3xl leading-tight md:text-4xl">
-                Две фазы вместо обычного роликового массажа
-              </h2>
-              <p className="mt-4 text-sm leading-7 text-[#ece6da]/68">
+              <p className="text-sm leading-7 text-[#ece6da]/68">
                 Сначала Silicon Power по маслу: лимфоузлы, отток жидкости,
                 лёгкий пилинг, подготовка тканей. Затем Metallic Touch по
                 костюму — живот, бока, бёдра, ягодицы, руки, спина. Металл
