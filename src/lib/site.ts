@@ -7,7 +7,7 @@ export const site = {
   city: "Геленджик",
   mapsUrl: "https://yandex.ru/maps/org/fiolet/108706549072/",
   mapsEmbed:
-    "https://yandex.ru/map-widget/v1/?ol=biz&oid=108706549072&ll=38.067614%2C44.555612&z=16",
+    "https://yandex.ru/map-widget/v1/?ll=38.067614%2C44.555612&z=16&pt=38.067614,44.555612,pm2rdm",
   phone: "+7 952 838-84-84",
   phoneHref: "tel:+79528388484",
   telegram: "https://t.me/+79528388484",
@@ -53,8 +53,8 @@ export const services = {
       { href: "#how", label: "Сеанс" },
       { href: "#prices", label: "Цены" },
       { href: "#faq", label: "Вопросы" },
-      { href: "#address", label: "Адрес" },
       { href: "#contact", label: "Запись" },
+      { href: "#address", label: "Адрес" },
     ] satisfies NavLink[],
   },
 } as const;

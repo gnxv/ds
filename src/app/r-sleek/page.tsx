@@ -421,7 +421,25 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <section id="address" className="px-5 pb-20 md:px-6 md:pb-28">
+      <section id="contact" className="px-5 pb-20 md:px-6 md:pb-28">
+        <div className="mx-auto max-w-6xl rounded-[1.8rem] bg-[#151a21] px-6 py-12 md:px-12">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            Запись
+          </p>
+          <h2 className="font-serif mt-3 max-w-xl text-4xl md:text-5xl">
+            Начните с одной процедуры
+          </h2>
+          <p className="mt-5 max-w-2xl text-sm leading-7 text-[#ece6da]/65">
+            Основной быстрый эффект даёт лимфодренаж и уменьшение застоя
+            жидкости. Улучшение вида кожи и подтягивание кожи тоже очень
+            заметны. Эффект накапливается к 5–6 процедуре и максимума достигает
+            к концу курса.
+          </p>
+          <ContactActions />
+        </div>
+      </section>
+
+      <section id="address" className="px-5 pb-24 md:px-6">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
             Адрес
@@ -432,7 +450,7 @@ export default function RSleekPage() {
           <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
             {site.address}
             <br />
-            {site.addressExtra}. Два кабинета рядом: солярий и R-Sleek.
+            {site.addressExtra}.
           </p>
           <a
             href={site.mapsUrl}
@@ -451,24 +469,6 @@ export default function RSleekPage() {
               allowFullScreen
             />
           </div>
-        </div>
-      </section>
-
-      <section id="contact" className="px-5 pb-24 md:px-6">
-        <div className="mx-auto max-w-6xl rounded-[1.8rem] bg-[#151a21] px-6 py-12 md:px-12">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-            Запись
-          </p>
-          <h2 className="font-serif mt-3 max-w-xl text-4xl md:text-5xl">
-            Начните с одной процедуры
-          </h2>
-          <p className="mt-5 max-w-2xl text-sm leading-7 text-[#ece6da]/65">
-            Основной быстрый эффект даёт лимфодренаж и уменьшение застоя
-            жидкости. Улучшение вида кожи и подтягивание кожи тоже очень
-            заметны. Эффект накапливается к 5–6 процедуре и максимума достигает
-            к концу курса.
-          </p>
-          <ContactActions />
         </div>
       </section>
 
