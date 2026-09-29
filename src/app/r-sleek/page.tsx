@@ -472,7 +472,7 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <SiteFooter tone="sculpt" />
+      <SiteFooter tone="sculpt" current="rsleek" />
     </div>
   );
 }

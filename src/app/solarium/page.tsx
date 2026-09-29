@@ -88,7 +88,7 @@ export default function SolariumPage() {
         cards={["Безопасность", "Первый визит", "Результат"]}
       />
       <ContactStub tone="sun" />
-      <SiteFooter tone="sun" />
+      <SiteFooter tone="sun" current="solarium" />
     </div>
   );
 }

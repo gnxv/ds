@@ -70,8 +70,15 @@ function MaxIcon() {
   );
 }
 
+export const socials = [
+  { href: site.telegram, label: "Telegram", icon: TelegramIcon },
+  { href: site.whatsapp, label: "WhatsApp", icon: WhatsAppIcon },
+  { href: site.max, label: "Max", icon: MaxIcon },
+  { href: site.instagram, label: site.instagramHandle, icon: InstagramIcon },
+] as const;
+
 const pill =
-  "inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-3 text-[11px] uppercase tracking-[0.18em] transition hover:border-white/45";
+  "inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-3 text-[11px] uppercase tracking-[0.18em] transition duration-300 hover:border-white/45 hover:bg-white/5";
 
 export function ContactActions() {
   return (
