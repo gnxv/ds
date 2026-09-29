@@ -122,12 +122,13 @@ function GatewayPanel({
         </p>
         <span
           className={[
-            "mt-10 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.34em] transition-transform duration-500 group-hover:translate-x-1",
-            isSun ? "text-[#f4e6c8]" : "text-[#ece6da]",
+            "mt-9 inline-flex items-center rounded-full border px-4 py-2 text-[11px] uppercase tracking-[0.28em] transition-colors duration-500",
+            isSun
+              ? "border-[#e0b06a]/55 text-[#f4e6c8] group-hover:border-[#e0b06a] group-hover:bg-[#e0b06a]/12"
+              : "border-white/30 text-[#ece6da] group-hover:border-[#ece6da] group-hover:bg-white/10",
           ].join(" ")}
         >
           Выбрать
-          <span aria-hidden className="block h-px w-10 bg-current" />
         </span>
       </div>
     </Link>
