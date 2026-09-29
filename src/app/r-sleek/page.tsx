@@ -207,46 +207,42 @@ export default function RSleekPage() {
             Процедура
           </p>
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
-            Сначала отток, потом зона
+            Двухфазная методика
           </h2>
 
-          <div className="mt-10 grid items-center gap-8 overflow-hidden rounded-[1.8rem] border border-white/10 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="px-7 py-7 md:px-10 md:py-8">
-              <p className="text-sm leading-7 text-[#ece6da]/68">
-                Обычный роликовый массаж идёт одной насадкой. R-Sleek — двумя
-                фазами. Меняется цилиндр, не кабинет.
-              </p>
-              <div className="mt-6 space-y-5">
-                <div>
-                  <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
-                    Фаза 1 · силикон по маслу
-                  </p>
-                  <p className="mt-2 text-sm leading-7 text-[#ece6da]/68">
-                    Лимфоузлы, отток лимфы и межтканевой жидкости, лёгкий
-                    пилинг, подготовка тканей.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
-                    Фаза 2 · металл по костюму
-                  </p>
-                  <p className="mt-2 text-sm leading-7 text-[#ece6da]/68">
-                    Живот, бока, бёдра, ягодицы, руки, спина. Глубже механика и
-                    тепло: металл трётся о ткань, кожу маслом на этой фазе не
-                    трогают.
-                  </p>
-                </div>
-              </div>
-              <p className="mt-6 text-sm leading-7 text-[#ece6da]/55">
-                Костюм нужен не только для гигиены. Если полная схема не нужна —
-                оставляем одну фазу.
-              </p>
+          <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-2">
+            <div className="grid gap-4">
+              <article className="rounded-[1.6rem] border border-white/10 p-7">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                  Силиконовая насадка по маслу
+                </p>
+                <h3 className="font-serif mt-2 text-3xl">Лимфодренаж</h3>
+                <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
+                  Стимуляция лимфоузлов, запуск оттока лимфы и межтканевой
+                  жидкости, лёгкий пилинг-эффект, стимуляция кровообращения и
+                  обменных процессов.
+                </p>
+              </article>
+              <article className="rounded-[1.6rem] border border-white/10 p-7">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                  Металлическая насадка по костюму
+                </p>
+                <h3 className="font-serif mt-2 text-3xl">Локальная коррекция</h3>
+                <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
+                  Интенсивная проработка проблемных зон: живот, бока, бёдра,
+                  ягодицы, руки, спина. Более глубокое механическое и тепловое
+                  воздействие. Лифтинг ягодиц, улучшение тонуса. Расслабление
+                  мышц как после спорта.
+                </p>
+              </article>
             </div>
-            <div className="aspect-[3/2] bg-black">
-              <InlineVideo
-                src="/media/r-sleek/manipula.mp4"
-                poster="/media/r-sleek/manipula-poster.jpg"
-              />
+            <div className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-black">
+              <div className="h-full min-h-[16rem]">
+                <InlineVideo
+                  src="/media/r-sleek/manipula.mp4"
+                  poster="/media/r-sleek/manipula-poster.jpg"
+                />
+              </div>
             </div>
           </div>
         </div>
