@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { site, type ServiceKey } from "@/lib/site";
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { socials } from "@/components/layout/ContactActions";
+import { PhoneIcon, socials } from "@/components/layout/ContactActions";
 
 export { SiteHeader };
 
@@ -24,7 +24,7 @@ const tones = {
     muted: "text-[#ece6da]/55",
     ink: "text-[#ece6da]",
     accent: "text-[#8fa08c]",
-    active: "bg-[#ece6da] text-[#0b0e12]",
+    active: "border-[#8fa08c]/40 bg-[#141a16] text-[#8fa08c]",
     idle: "border-white/20 text-[#ece6da] hover:border-white/50 hover:bg-white/8",
     icon: "border-white/20 text-[#ece6da] hover:border-white/50 hover:bg-white/8 hover:text-[#8fa08c]",
   },
@@ -81,8 +81,9 @@ export function SiteFooter({
           </p>
           <a
             href={site.phoneHref}
-            className={`mt-3 inline-block text-sm transition duration-300 hover:opacity-80 ${t.ink}`}
+            className={`mt-3 inline-flex items-center gap-2 text-sm transition duration-300 hover:opacity-80 ${t.ink}`}
           >
+            <PhoneIcon />
             {site.phone}
           </a>
           <div className="mt-4 flex flex-wrap gap-2">

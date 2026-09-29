@@ -18,7 +18,7 @@ function Icon({
 
 const iconClass = "h-4 w-4";
 
-function PhoneIcon() {
+export function PhoneIcon() {
   return (
     <Icon label="Телефон">
       <svg viewBox="0 0 24 24" className={iconClass} fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -104,7 +104,7 @@ export function ContactActions() {
       </a>
       <a href={site.instagram} target="_blank" rel="noreferrer" className={pill}>
         <InstagramIcon />
-        {site.instagramHandle}
+        Instagram
       </a>
     </div>
   );
