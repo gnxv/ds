@@ -2,9 +2,12 @@ export const site = {
   name: "Fiolet",
   tagline: "Солярий и аппаратный массаж R-Sleek. Два кабинета рядом.",
   location: "Гостиница, соседние кабинеты",
-  phone: "+7 (000) 000-00-00",
-  telegram: "https://t.me/",
-  instagram: "https://instagram.com/",
+  phone: "+7 952 838-84-84",
+  phoneHref: "tel:+79528388484",
+  telegram: "https://t.me/+79528388484",
+  whatsapp: "https://wa.me/79528388484",
+  instagram: "https://instagram.com/fiolet2018",
+  instagramHandle: "@fiolet2018",
 } as const;
 
 export type ServiceKey = "solarium" | "rsleek";

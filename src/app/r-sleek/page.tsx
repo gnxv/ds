@@ -436,16 +436,34 @@ export default function RSleekPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href={`tel:${site.phone.replace(/[^\d+]/g, "")}`}
+              href={site.phoneHref}
               className="rounded-full bg-[#ece6da] px-5 py-3 text-[11px] uppercase tracking-[0.2em] text-[#0b0e12]"
             >
               {site.phone}
             </a>
             <a
               href={site.telegram}
+              target="_blank"
+              rel="noreferrer"
               className="rounded-full border border-white/20 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
             >
               Telegram
+            </a>
+            <a
+              href={site.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/20 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
+            >
+              WhatsApp
+            </a>
+            <a
+              href={site.instagram}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/20 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
+            >
+              {site.instagramHandle}
             </a>
           </div>
         </div>

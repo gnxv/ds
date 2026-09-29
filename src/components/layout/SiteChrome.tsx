@@ -37,7 +37,7 @@ export function SiteFooter({ tone }: { tone: Tone }) {
           <a href="#contact">Запись</a>
         </nav>
         <div className={`text-sm ${t.muted}`}>
-          <p>{site.phone}</p>
+          <a href={site.phoneHref}>{site.phone}</a>
         </div>
       </div>
     </footer>
