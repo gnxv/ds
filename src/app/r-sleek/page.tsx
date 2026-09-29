@@ -120,12 +120,12 @@ export default function RSleekPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b0e12] via-transparent to-black/35" />
         <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-5 pb-16 pt-24 md:px-6 md:pb-24">
           <p className="text-[11px] uppercase tracking-[0.38em] text-[#8fa08c]">
-            Аппаратный массаж · Fiolet
+            Аппаратная коррекция фигуры
           </p>
           <h1 className="font-serif mt-4 max-w-4xl text-4xl leading-[0.96] sm:text-6xl md:text-7xl">
-            Минус объёмы.
+            Минус 800&nbsp;г
             <br />
-            Более собранный силуэт.
+            уже после первой процедуры.
           </h1>
           <p className="mt-6 max-w-xl text-[16px] leading-8 text-[#ece6da]/82 md:text-[17px]">
             R-Sleek снимает отёк, уменьшает проявления целлюлита и собирает
