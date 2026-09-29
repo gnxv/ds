@@ -1,10 +1,11 @@
+import { ContactActions } from "@/components/layout/ContactActions";
 import { SiteFooter, SiteHeader } from "@/components/layout/SiteChrome";
 import { BeforeAfter } from "@/components/r-sleek/BeforeAfter";
 import {
   BackgroundVideo,
   InlineVideo,
 } from "@/components/r-sleek/Media";
-import { services, site } from "@/lib/site";
+import { services } from "@/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -434,38 +435,7 @@ export default function RSleekPage() {
             заметны. Эффект накапливается к 5–6 процедуре и максимума достигает
             к концу курса.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={site.phoneHref}
-              className="rounded-full bg-[#ece6da] px-5 py-3 text-[11px] uppercase tracking-[0.2em] text-[#0b0e12]"
-            >
-              {site.phone}
-            </a>
-            <a
-              href={site.telegram}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border border-white/20 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
-            >
-              Telegram
-            </a>
-            <a
-              href={site.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border border-white/20 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
-            >
-              WhatsApp
-            </a>
-            <a
-              href={site.instagram}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border border-white/20 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
-            >
-              {site.instagramHandle}
-            </a>
-          </div>
+          <ContactActions />
         </div>
       </section>
 

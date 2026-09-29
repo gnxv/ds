@@ -8,6 +8,7 @@ export const site = {
   whatsapp: "https://wa.me/79528388484",
   instagram: "https://instagram.com/fiolet2018",
   instagramHandle: "@fiolet2018",
+  max: "https://max.ru",
 } as const;
 
 export type ServiceKey = "solarium" | "rsleek";
