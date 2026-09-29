@@ -35,12 +35,12 @@ const attachments = [
   {
     name: "Silicon Power",
     use: "По маслу",
-    text: "Силиконовые сферы крутятся каждая вокруг своей оси. Этой насадкой начинаем: лимфоузлы, линии оттока, мягкая проработка. Подходит, если кожа чувствительная или нужен лимфодренаж без костюма.",
+    text: "Силиконовые сферы крутятся каждая вокруг своей оси. Ей открываем лимфу: узлы, линии оттока, мягкий старт. Без костюма, подходит чувствительной коже.",
   },
   {
     name: "Metallic Touch",
     use: "По костюму",
-    text: "Металлические ролики на фиксированных осях. Трение о сетчатый костюм даёт нагрев участка на несколько градусов. Этой насадкой берём конкретную зону: живот, бёдра, ягодицы.",
+    text: "Металлические ролики на фиксированных осях. Трение о сетку нагревает зону на несколько градусов. Ей берём живот, бёдра, ягодицы.",
   },
 ];
 
@@ -215,59 +215,31 @@ export default function RSleekPage() {
       </section>
 
       <section id="about" className="px-5 pb-20 md:px-6 md:pb-28">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-              Процедура
-            </p>
-            <h2 className="font-serif mt-3 text-4xl leading-[1.05] md:text-5xl">
-              Для тех, кто хочет увидеть тело стройнее
-            </h2>
-            <div className="mt-6 space-y-5 text-[15px] leading-8 text-[#ece6da]/80">
-              <p>
-                R-Sleek — аппаратный роликовый массаж. Идут за меньшими
-                объёмами, за лёгкостью вместо отёка и за более подтянутым
-                силуэтом. Не за «сжечь жир за сеанс», а за тело, которое в
-                одежде и в зеркале выглядит собраннее.
-              </p>
-              <p>
-                Рабочий инструмент — цилиндрическая манипула примерно на два
-                килограмма с десятью рядами роликов. Кожу не засасывают:
-                давление идёт от веса насадки, движение — от вращения, тепло —
-                от металла по костюму. Поэтому синяков, из‑за которых нельзя
-                надеть платье завтра, обычно нет.
-              </p>
-              <p>
-                Кабинет в гостинице, дверь в дверь с солярием. Один человек,
-                один слот. Начать можно с одной процедуры — чтобы почувствовать
-                разницу. Выраженный результат собирается курсом.
-              </p>
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-[1.8rem] border border-white/10 bg-black">
-            <div className="aspect-[3/2]">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            Процедура
+          </p>
+          <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
+            Ролики, вес и тепло — без вакуума
+          </h2>
+
+          <div className="mt-10 grid items-center gap-8 overflow-hidden rounded-[1.8rem] border border-white/10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="aspect-[3/2] bg-black">
               <InlineVideo
                 src="/media/r-sleek/manipula.mp4"
                 poster="/media/r-sleek/manipula-poster.jpg"
               />
             </div>
+            <div className="px-7 py-7 md:px-10 md:py-8">
+              <p className="text-sm leading-7 text-[#ece6da]/72">
+                Цилиндр около двух килограммов, десять рядов роликов. Кожу не
+                засасывают: давление даёт вес насадки, ход — вращение, тепло —
+                металл по костюму. Синяков, из‑за которых нельзя надеть платье
+                завтра, обычно нет. Один человек, один слот. Разницу видно уже
+                после первого визита, устойчивее тело становится на курсе.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="px-5 pb-20 md:px-6 md:pb-28">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-            Две насадки
-          </p>
-          <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
-            Сначала отток, потом форма
-          </h2>
-          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
-            В комплекте R-Sleek два сменных цилиндра. Сеанс почти всегда
-            двухфазный: силикон открывает лимфу, металл берёт проблемную зону.
-            Меняется насадка, не кабинет и не специалист.
-          </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {attachments.map((item) => (
