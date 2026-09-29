@@ -83,3 +83,28 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+@keyframes photo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.photo-marquee {
+  display: flex;
+  width: max-content;
+  animation: photo-marquee 42s linear infinite;
+}
+
+.photo-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-marquee {
+    animation: none;
+  }
+}

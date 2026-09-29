@@ -116,12 +116,12 @@ export default function SolariumPage() {
             не ставим.
           </p>
 
-          <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-2">
+          <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-[0.72fr_1.28fr]">
             <div className="overflow-hidden rounded-[1.6rem] border border-[#e0b06a]/20 bg-black">
-              <div className="aspect-[16/9]">
+              <div className="aspect-[9/16] max-h-[36rem] lg:max-h-none lg:h-full">
                 <InlineVideo
-                  src="/media/solarium/cabin.mp4"
-                  poster="/media/solarium/cabin.jpg"
+                  src="/media/solarium/vertical.mp4"
+                  poster="/media/solarium/vertical.jpg"
                 />
               </div>
             </div>
@@ -144,7 +144,15 @@ export default function SolariumPage() {
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
             Премиум-средства для загара
           </h2>
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
+          <div className="mt-10 overflow-hidden rounded-[1.6rem] border border-[#e0b06a]/20 bg-black">
+            <div className="aspect-[16/9]">
+              <InlineVideo
+                src="/media/solarium/cabin.mp4"
+                poster="/media/solarium/cabin.jpg"
+              />
+            </div>
+          </div>
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
             <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
               <p className="text-[11px] uppercase tracking-[0.22em] text-[#e0b06a]">
                 До сеанса
@@ -181,20 +189,25 @@ export default function SolariumPage() {
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#e0b06a]">
             Фото
           </p>
-          <h2 className="font-serif mt-3 text-4xl md:text-5xl">Как выглядит тон</h2>
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {gallery.map((item) => (
-              <figure
-                key={item.src}
-                className="overflow-hidden rounded-[1.4rem] border border-[#e0b06a]/20 bg-black"
-              >
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="aspect-[3/4] w-full object-cover"
-                />
-              </figure>
-            ))}
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">Клиенты</h2>
+          <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#f4e6c8]/72">
+            Кадры из кабинета. Лента будет расти — сейчас первые фото.
+          </p>
+          <div className="mt-10 overflow-hidden">
+            <div className="photo-marquee gap-3 pr-3">
+              {[...gallery, ...gallery].map((item, index) => (
+                <figure
+                  key={`${item.src}-${index}`}
+                  className="w-[15rem] shrink-0 overflow-hidden rounded-[1.4rem] border border-[#e0b06a]/20 bg-black sm:w-[18rem]"
+                >
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="aspect-[3/4] w-full object-cover"
+                  />
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </section>
