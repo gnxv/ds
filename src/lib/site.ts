@@ -41,6 +41,7 @@ export const services = {
       { href: "#about", label: "Процедура" },
       { href: "#effect", label: "Результат" },
       { href: "#how", label: "Сеанс" },
+      { href: "#prices", label: "Цены" },
       { href: "#faq", label: "Вопросы" },
       { href: "#contact", label: "Запись" },
     ] satisfies NavLink[],

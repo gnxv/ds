@@ -311,6 +311,83 @@ export default function RSleekPage() {
         </div>
       </section>
 
+      <section id="prices" className="px-5 pb-20 md:px-6 md:pb-28">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            Цены
+          </p>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">
+            Разово и абонементом
+          </h2>
+          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
+            Цифры пока ориентир. Точную стоимость подтвердим при записи.
+          </p>
+
+          <div className="mt-10 grid gap-4 lg:grid-cols-2">
+            <article className="rounded-[1.6rem] border border-white/10 p-7 md:p-8">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                Разовое посещение
+              </p>
+              <div className="mt-8 space-y-5">
+                <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
+                  <div>
+                    <p className="font-serif text-2xl">40 минут</p>
+                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                      Одна–две зоны
+                    </p>
+                  </div>
+                  <p className="font-serif text-3xl">3 500 ₽</p>
+                </div>
+                <div className="flex items-end justify-between gap-4">
+                  <div>
+                    <p className="font-serif text-2xl">60 минут</p>
+                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                      Несколько зон
+                    </p>
+                  </div>
+                  <p className="font-serif text-3xl">4 800 ₽</p>
+                </div>
+              </div>
+            </article>
+
+            <article className="rounded-[1.6rem] border border-[#8fa08c]/30 bg-[#141a16] p-7 md:p-8">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                Абонемент
+              </p>
+              <div className="mt-8 space-y-5">
+                <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
+                  <div>
+                    <p className="font-serif text-2xl">6 сеансов</p>
+                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                      40 мин · 3 150 ₽ за визит
+                    </p>
+                  </div>
+                  <p className="font-serif text-3xl">18 900 ₽</p>
+                </div>
+                <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
+                  <div>
+                    <p className="font-serif text-2xl">10 сеансов</p>
+                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                      40 мин · 2 900 ₽ за визит
+                    </p>
+                  </div>
+                  <p className="font-serif text-3xl">29 000 ₽</p>
+                </div>
+                <div className="flex items-end justify-between gap-4">
+                  <div>
+                    <p className="font-serif text-2xl">10 сеансов</p>
+                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                      60 мин · 3 900 ₽ за визит
+                    </p>
+                  </div>
+                  <p className="font-serif text-3xl">39 000 ₽</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="faq" className="px-5 pb-16 md:px-6">
         <div className="mx-auto max-w-6xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
