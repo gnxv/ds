@@ -111,8 +111,7 @@ export default function SolariumPage() {
             </h2>
             <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#f4e6c8]/72">
               Вертикальная кабина. Сеанс короткий: зашли, выбрали минуты, вышли
-              с ровным тоном. Соседняя дверь — R-Sleek, но в один день эти
-              процедуры не ставим.
+              с ровным тоном. Цвет ложится ровно, без границы купальника.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3">
@@ -144,6 +143,14 @@ export default function SolariumPage() {
             Премиум-средства для загара
           </h2>
           <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-2">
+            <div className="overflow-hidden rounded-[1.6rem] border border-[#e0b06a]/20 bg-black">
+              <div className="h-full min-h-[16rem]">
+                <InlineVideo
+                  src="/media/solarium/cabin.mp4"
+                  poster="/media/solarium/cabin.jpg"
+                />
+              </div>
+            </div>
             <div className="grid gap-4">
               <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-[#e0b06a]">
@@ -163,14 +170,6 @@ export default function SolariumPage() {
                   Загар держится дольше, если не забывать про него дома.
                 </p>
               </article>
-            </div>
-            <div className="overflow-hidden rounded-[1.6rem] border border-[#e0b06a]/20 bg-black">
-              <div className="h-full min-h-[16rem]">
-                <InlineVideo
-                  src="/media/solarium/cabin.mp4"
-                  poster="/media/solarium/cabin.jpg"
-                />
-              </div>
             </div>
           </div>
         </div>
