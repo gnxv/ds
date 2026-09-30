@@ -51,7 +51,7 @@ const faqs = [
 
 export default function RSleekPage() {
   return (
-    <div className="min-h-dvh bg-[#0b0e12] text-[#ece6da]">
+    <div className="min-h-dvh bg-[#16120e] text-[#efe4d4]">
       <SiteHeader
         tone="sculpt"
         current="rsleek"
@@ -64,9 +64,9 @@ export default function RSleekPage() {
           poster="/media/r-sleek/hero.jpg"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/55 to-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0b0e12] via-transparent to-black/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#16120e] via-transparent to-black/35" />
         <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-5 pb-16 pt-24 md:px-6 md:pb-24">
-          <p className="text-[11px] uppercase tracking-[0.38em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.38em] text-[#c4a078]">
             Аппаратная коррекция фигуры
           </p>
           <h1 className="font-serif mt-4 max-w-4xl text-4xl leading-[0.96] sm:text-6xl md:text-7xl">
@@ -74,7 +74,7 @@ export default function RSleekPage() {
             <br />
             уже после первой процедуры.
           </h1>
-          <p className="mt-6 max-w-xl text-[16px] leading-8 text-[#ece6da]/82 md:text-[17px]">
+          <p className="mt-6 max-w-xl text-[16px] leading-8 text-[#efe4d4]/82 md:text-[17px]">
             R-Sleek снимает отёк, уменьшает проявления целлюлита и собирает
             линию живота, боков, бёдер и ягодиц. После первого сеанса может
             уйти до 800&nbsp;г жидкости — тело выглядит легче уже в тот же день.
@@ -82,7 +82,7 @@ export default function RSleekPage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="rounded-full bg-[#ece6da] px-5 py-3 text-[11px] uppercase tracking-[0.2em] text-[#0b0e12]"
+              className="rounded-full bg-[#efe4d4] px-5 py-3 text-[11px] uppercase tracking-[0.2em] text-[#16120e]"
             >
               Записаться
             </a>
@@ -98,7 +98,7 @@ export default function RSleekPage() {
 
       <section id="method" className="px-5 pb-20 pt-16 md:px-6 md:pb-28 md:pt-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
             Принцип
           </p>
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
@@ -106,30 +106,30 @@ export default function RSleekPage() {
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <article className="rounded-[1.6rem] border border-white/10 p-7">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                 Компрессия
               </p>
-              <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
+              <p className="mt-4 text-sm leading-7 text-[#efe4d4]/72">
                 Манипула — тяжёлый цилиндр своим весом выталкивает застоявшуюся
                 жидкость из тканей в лимфатическое русло. Отсюда ощущение
                 лёгкости в тот же вечер и минус в сантиметрах.
               </p>
             </article>
             <article className="rounded-[1.6rem] border border-white/10 p-7">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                 Ротация
               </p>
-              <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
+              <p className="mt-4 text-sm leading-7 text-[#efe4d4]/72">
                 Десять рядов роликов прокатывают подкожный слой, а не гладят
                 поверхность. Ткань смещается, разминаются уплотнения, меньше
                 заметна «апельсиновая корка».
               </p>
             </article>
             <article className="rounded-[1.6rem] border border-white/10 p-7">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                 Термоэффект
               </p>
-              <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
+              <p className="mt-4 text-sm leading-7 text-[#efe4d4]/72">
                 Металлическая насадка трётся о сетчатый костюм и слегка
                 прогревает зону. Сосуды открываются, кожа становится мягче.
                 Тепло здесь помогает участку отдать жидкость и размяться.
@@ -145,13 +145,13 @@ export default function RSleekPage() {
               />
             </div>
             <div className="px-7 py-7 md:px-10 md:py-8">
-              <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
+              <p className="text-[11px] uppercase tracking-[0.28em] text-[#c4a078]">
                 Насадка в работе
               </p>
               <h3 className="font-serif mt-3 text-3xl leading-tight">
                 Скорость вращения около 360–500 оборотов в минуту
               </h3>
-              <p className="mt-4 text-sm leading-7 text-[#ece6da]/68">
+              <p className="mt-4 text-sm leading-7 text-[#efe4d4]/68">
                 Манипулу ведут по зоне непрерывным ходом — так жидкость уходит
                 вдоль лимфотока, а не сгоняется в одну складку. На животе и
                 руках нажим спокойнее, на бёдрах и ягодицах плотнее.
@@ -163,7 +163,7 @@ export default function RSleekPage() {
 
       <section id="about" className="px-5 pb-20 md:px-6 md:pb-28">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
             Процедура
           </p>
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
@@ -173,22 +173,22 @@ export default function RSleekPage() {
           <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-2">
             <div className="grid gap-4">
               <article className="rounded-[1.6rem] border border-white/10 p-7">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   Силиконовая насадка по маслу
                 </p>
                 <h3 className="font-serif mt-2 text-3xl">Лимфодренаж</h3>
-                <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
+                <p className="mt-4 text-sm leading-7 text-[#efe4d4]/72">
                   Стимуляция лимфоузлов, запуск оттока лимфы и межтканевой
                   жидкости, лёгкий пилинг-эффект, стимуляция кровообращения и
                   обменных процессов.
                 </p>
               </article>
               <article className="rounded-[1.6rem] border border-white/10 p-7">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   Металлическая насадка по костюму
                 </p>
                 <h3 className="font-serif mt-2 text-3xl">Локальная коррекция</h3>
-                <p className="mt-4 text-sm leading-7 text-[#ece6da]/72">
+                <p className="mt-4 text-sm leading-7 text-[#efe4d4]/72">
                   Интенсивная проработка проблемных зон: живот, бока, бёдра,
                   ягодицы, руки, спина. Более глубокое механическое и тепловое
                   воздействие. Лифтинг ягодиц, улучшение тонуса. Расслабление
@@ -210,13 +210,13 @@ export default function RSleekPage() {
 
       <section id="effect" className="px-5 pb-20 md:px-6 md:pb-28">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
             Результат
           </p>
           <h2 className="font-serif mt-3 max-w-3xl text-4xl md:text-5xl">
             Что даёт курс
           </h2>
-          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
+          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#efe4d4]/72">
             За курс уходят объёмы живота, боков, бёдер и ягодиц, спокойнее
             целлюлит, силуэт собирается. На весах часто минус 5–8&nbsp;кг —
             зависит от исходных параметров. После первого сеанса может уйти до
@@ -233,13 +233,13 @@ export default function RSleekPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+              <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
                 Сеанс
               </p>
               <h2 className="font-serif mt-3 text-4xl md:text-5xl">
                 40 или 60 минут
               </h2>
-              <p className="mt-5 text-[15px] leading-8 text-[#ece6da]/72">
+              <p className="mt-5 text-[15px] leading-8 text-[#efe4d4]/72">
                 Сорок минут, если хотите уделить фигуре внимание и сразу
                 вернуться к делам. Час — если зон несколько и нужна более
                 плотная работа.
@@ -247,21 +247,21 @@ export default function RSleekPage() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2 sm:items-start">
               <article className="rounded-[1.8rem] border border-white/10 p-7">
-                <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
+                <p className="text-[11px] uppercase tracking-[0.28em] text-[#c4a078]">
                   Короткий формат
                 </p>
                 <h3 className="font-serif mt-3 text-5xl">40 мин</h3>
-                <p className="mt-5 text-sm leading-7 text-[#ece6da]/70">
+                <p className="mt-5 text-sm leading-7 text-[#efe4d4]/70">
                   Фокус на одной–двух проблемных зонах. Сорок минут — и дальше
                   по дню, с ощущением лёгкости, без окна на восстановление.
                 </p>
               </article>
-              <article className="rounded-[1.8rem] border border-[#8fa08c]/30 bg-[#141a16] p-7">
-                <p className="text-[11px] uppercase tracking-[0.28em] text-[#8fa08c]">
+              <article className="rounded-[1.8rem] border border-[#c4a078]/30 bg-[#221c16] p-7">
+                <p className="text-[11px] uppercase tracking-[0.28em] text-[#c4a078]">
                   Расширенный
                 </p>
                 <h3 className="font-serif mt-3 text-5xl">60 мин</h3>
-                <p className="mt-5 text-sm leading-7 text-[#ece6da]/70">
+                <p className="mt-5 text-sm leading-7 text-[#efe4d4]/70">
                   Несколько зон за один заход: живот, бока, бёдра, ягодицы.
                   Этот слот обычно берут, когда нужна более комплексная работа
                   с силуэтом.
@@ -272,9 +272,9 @@ export default function RSleekPage() {
 
           <div
             id="course"
-            className="mt-10 rounded-[2rem] border border-white/10 bg-[#10141a] px-6 py-10 md:px-12 md:py-14"
+            className="mt-10 rounded-[2rem] border border-white/10 bg-[#1b1612] px-6 py-10 md:px-12 md:py-14"
           >
-            <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
               Курс
             </p>
             <h2 className="font-serif mt-3 max-w-2xl text-4xl md:text-5xl">
@@ -282,7 +282,7 @@ export default function RSleekPage() {
               <br />
               Курс — чтобы закрепить.
             </h2>
-            <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
+            <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#efe4d4]/72">
               Первый визит снимает отёк: до 800&nbsp;г жидкости может уйти сразу.
               На курсе, в зависимости от исходных параметров и особенностей
               тела, на весах бывает минус 5–8&nbsp;кг. Цифры не обещание каждому —
@@ -290,19 +290,19 @@ export default function RSleekPage() {
             </p>
             <dl className="mt-10 grid gap-8 sm:grid-cols-3">
               <div>
-                <dt className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                <dt className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   После первого
                 </dt>
                 <dd className="font-serif mt-2 text-4xl">до 800 г</dd>
               </div>
               <div>
-                <dt className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                <dt className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   На курсе
                 </dt>
                 <dd className="font-serif mt-2 text-4xl">5–8 кг</dd>
               </div>
               <div>
-                <dt className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                <dt className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   Интервал
                 </dt>
                 <dd className="font-serif mt-2 text-4xl">1–2 дня</dd>
@@ -314,7 +314,7 @@ export default function RSleekPage() {
 
       <section id="prices" className="px-5 pb-20 md:px-6 md:pb-28">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
             Цены
           </p>
           <h2 className="font-serif mt-3 text-4xl md:text-5xl">
@@ -322,14 +322,14 @@ export default function RSleekPage() {
           </h2>
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
             <article className="rounded-[1.6rem] border border-white/10 p-7 md:p-8">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                 Разовое посещение
               </p>
               <div className="mt-8 space-y-5">
                 <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
                   <div>
                     <p className="font-serif text-2xl">40 минут</p>
-                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                    <p className="mt-1 text-sm text-[#efe4d4]/55">
                       1 процедура
                     </p>
                   </div>
@@ -338,7 +338,7 @@ export default function RSleekPage() {
                 <div className="flex items-end justify-between gap-4">
                   <div>
                     <p className="font-serif text-2xl">60 минут</p>
-                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                    <p className="mt-1 text-sm text-[#efe4d4]/55">
                       1 процедура
                     </p>
                   </div>
@@ -347,15 +347,15 @@ export default function RSleekPage() {
               </div>
             </article>
 
-            <article className="rounded-[1.6rem] border border-[#8fa08c]/30 bg-[#141a16] p-7 md:p-8">
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+            <article className="rounded-[1.6rem] border border-[#c4a078]/30 bg-[#221c16] p-7 md:p-8">
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                 Абонемент
               </p>
               <div className="mt-8 space-y-5">
                 <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
                   <div>
                     <p className="font-serif text-2xl">5 процедур</p>
-                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                    <p className="mt-1 text-sm text-[#efe4d4]/55">
                       40 мин · 3 000 ₽ за визит
                     </p>
                   </div>
@@ -364,7 +364,7 @@ export default function RSleekPage() {
                 <div className="flex items-end justify-between gap-4">
                   <div>
                     <p className="font-serif text-2xl">10 процедур</p>
-                    <p className="mt-1 text-sm text-[#ece6da]/55">
+                    <p className="mt-1 text-sm text-[#efe4d4]/55">
                       40 мин · 2 500 ₽ за визит
                     </p>
                   </div>
@@ -378,7 +378,7 @@ export default function RSleekPage() {
 
       <section id="faq" className="px-5 pb-16 md:px-6">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
             Вопросы
           </p>
           <h2 className="font-serif mt-3 text-4xl md:text-5xl">
@@ -390,15 +390,15 @@ export default function RSleekPage() {
                 <summary className="cursor-pointer list-none font-serif text-[1.45rem] leading-tight">
                   <span className="flex items-start justify-between gap-6">
                     {item.q}
-                    <span className="mt-1 shrink-0 text-[#8fa08c] group-open:hidden">
+                    <span className="mt-1 shrink-0 text-[#c4a078] group-open:hidden">
                       +
                     </span>
-                    <span className="mt-1 hidden shrink-0 text-[#8fa08c] group-open:inline">
+                    <span className="mt-1 hidden shrink-0 text-[#c4a078] group-open:inline">
                       –
                     </span>
                   </span>
                 </summary>
-                <p className="mt-3 max-w-3xl text-sm leading-7 text-[#ece6da]/68">
+                <p className="mt-3 max-w-3xl text-sm leading-7 text-[#efe4d4]/68">
                   {item.a}
                 </p>
               </details>
@@ -410,7 +410,7 @@ export default function RSleekPage() {
       <section className="px-5 pb-16 md:px-6">
         <div className="mx-auto max-w-6xl rounded-[1.8rem] border border-white/10 px-6 py-8 md:px-10">
           <h2 className="font-serif text-3xl">Противопоказания</h2>
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-[#ece6da]/68">
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-[#efe4d4]/68">
             Беременность и шесть месяцев после родов, температура и острые
             инфекции, раны и воспаления на коже, тромбофлебит, обострение
             сердечно‑сосудистых и почечных заболеваний, онкология,
@@ -421,27 +421,9 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <section id="contact" className="px-5 pb-20 md:px-6 md:pb-28">
-        <div className="mx-auto max-w-6xl rounded-[1.8rem] bg-[#151a21] px-6 py-12 md:px-12">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
-            Запись
-          </p>
-          <h2 className="font-serif mt-3 max-w-xl text-4xl md:text-5xl">
-            Начните с одной процедуры
-          </h2>
-          <p className="mt-5 max-w-2xl text-sm leading-7 text-[#ece6da]/65">
-            Основной быстрый эффект даёт лимфодренаж и уменьшение застоя
-            жидкости. Улучшение вида кожи и подтягивание кожи тоже очень
-            заметны. Эффект накапливается к 5–6 процедуре и максимума достигает
-            к концу курса.
-          </p>
-          <ContactActions />
-        </div>
-      </section>
-
       <section className="px-5 pb-16 md:px-6 md:pb-20">
         <div className="mx-auto max-w-4xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
             Мастера
           </p>
           <h2 className="font-serif mt-3 text-3xl md:text-4xl">
@@ -455,11 +437,11 @@ export default function RSleekPage() {
                 className="aspect-[4/5] w-full object-cover object-top"
               />
               <div className="p-5">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   Мастер R-Sleek
                 </p>
                 <h3 className="font-serif mt-2 text-2xl">Анна Волкова</h3>
-                <p className="mt-3 text-sm leading-6 text-[#ece6da]/68">
+                <p className="mt-3 text-sm leading-6 text-[#efe4d4]/68">
                   Ведёт двухфазный протокол: лимфодренаж и локальную коррекцию.
                   Спокойный ход, без гонки по минутам. Работает с животом,
                   боками, бёдрами и ягодицами.
@@ -473,11 +455,11 @@ export default function RSleekPage() {
                 className="aspect-[4/5] w-full object-cover object-top"
               />
               <div className="p-5">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   Мастер R-Sleek
                 </p>
                 <h3 className="font-serif mt-2 text-2xl">Дмитрий Орлов</h3>
-                <p className="mt-3 text-sm leading-6 text-[#ece6da]/68">
+                <p className="mt-3 text-sm leading-6 text-[#efe4d4]/68">
                   Берёт расширенные слоты на 60 минут, когда зон несколько.
                   Следит за нажимом под чувствительность кожи и не гонит
                   ролики «на максимум».
@@ -488,15 +470,33 @@ export default function RSleekPage() {
         </div>
       </section>
 
+      <section id="contact" className="px-5 pb-20 md:px-6 md:pb-28">
+        <div className="mx-auto max-w-6xl rounded-[1.8rem] bg-[#1f1a15] px-6 py-12 md:px-12">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
+            Запись
+          </p>
+          <h2 className="font-serif mt-3 max-w-xl text-4xl md:text-5xl">
+            Начните с одной процедуры
+          </h2>
+          <p className="mt-5 max-w-2xl text-sm leading-7 text-[#efe4d4]/65">
+            Основной быстрый эффект даёт лимфодренаж и уменьшение застоя
+            жидкости. Улучшение вида кожи и подтягивание кожи тоже очень
+            заметны. Эффект накапливается к 5–6 процедуре и максимума достигает
+            к концу курса.
+          </p>
+          <ContactActions />
+        </div>
+      </section>
+
       <section id="address" className="px-5 pb-24 md:px-6">
         <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
             Адрес
           </p>
           <h2 className="font-serif mt-3 text-4xl md:text-5xl">
             Геленджик, Бригантина
           </h2>
-          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#ece6da]/72">
+          <p className="mt-5 max-w-2xl text-[15px] leading-8 text-[#efe4d4]/72">
             {site.address}
             <br />
             {site.addressExtra}.
@@ -505,7 +505,7 @@ export default function RSleekPage() {
             href={site.mapsUrl}
             target="_blank"
             rel="noreferrer"
-            className="mt-4 inline-block text-[11px] uppercase tracking-[0.2em] text-[#8fa08c]"
+            className="mt-4 inline-block text-[11px] uppercase tracking-[0.2em] text-[#c4a078]"
           >
             Открыть в Яндекс Картах
           </a>
@@ -513,7 +513,7 @@ export default function RSleekPage() {
             <iframe
               title="Fiolet на Яндекс Картах"
               src={site.mapsEmbed}
-              className="h-[22rem] w-full bg-[#10141a] md:h-[28rem]"
+              className="h-[22rem] w-full bg-[#1b1612] md:h-[28rem]"
               loading="lazy"
               allowFullScreen
             />

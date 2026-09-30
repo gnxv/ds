@@ -17,13 +17,13 @@ const tones = {
     ink: "text-[#f4e6c8]",
   },
   sculpt: {
-    bg: "bg-[#0b0e12]/94",
-    line: "border-white/10",
-    accent: "text-[#8fa08c]",
-    muted: "text-[#ece6da]/58",
-    panel: "bg-[#0b0e12]",
-    chip: "border-white/15",
-    ink: "text-[#ece6da]",
+    bg: "bg-[#16120e]/94",
+    line: "border-[#c4a078]/20",
+    accent: "text-[#c4a078]",
+    muted: "text-[#efe4d4]/58",
+    panel: "bg-[#16120e]",
+    chip: "border-[#c4a078]/30",
+    ink: "text-[#efe4d4]",
   },
 } as const;
 

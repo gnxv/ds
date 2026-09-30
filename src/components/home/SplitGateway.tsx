@@ -85,7 +85,7 @@ function GatewayPanel({
       className={[
         "group grain relative flex min-h-[50dvh] flex-1 flex-col justify-end overflow-hidden px-8 py-16 transition-all duration-700 ease-[cubic-bezier(.22,1,.36,1)] md:min-h-dvh md:px-14 md:py-20",
         expanded ? "md:flex-[1.28]" : dimmed ? "md:flex-[0.86]" : "md:flex-1",
-        isSun ? "bg-[#160e09]" : "bg-[#0b0e12]",
+        isSun ? "bg-[#160e09]" : "bg-[#16120e]",
       ].join(" ")}
     >
       <div
@@ -99,7 +99,7 @@ function GatewayPanel({
           className={
             isSun
               ? "absolute inset-0 bg-gradient-to-r from-black/70 via-[#160e09]/45 to-black/20"
-              : "absolute inset-0 bg-gradient-to-r from-black/75 via-[#0b0e12]/50 to-black/20"
+              : "absolute inset-0 bg-gradient-to-r from-black/75 via-[#16120e]/50 to-black/20"
           }
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/25" />
@@ -109,7 +109,7 @@ function GatewayPanel({
         <p
           className={[
             "text-[11px] uppercase tracking-[0.38em]",
-            isSun ? "text-[#e0b06a]" : "text-[#c9d0c6]",
+            isSun ? "text-[#e0b06a]" : "text-[#d4c4ae]",
           ].join(" ")}
         >
           {kicker}
@@ -125,7 +125,7 @@ function GatewayPanel({
             "mt-9 inline-flex items-center rounded-full border px-4 py-2 text-[11px] uppercase tracking-[0.28em] transition-colors duration-500",
             isSun
               ? "border-[#e0b06a]/55 text-[#f4e6c8] group-hover:border-[#e0b06a] group-hover:bg-[#e0b06a]/12"
-              : "border-white/30 text-[#ece6da] group-hover:border-[#ece6da] group-hover:bg-white/10",
+              : "border-[#c4a078]/45 text-[#efe4d4] group-hover:border-[#c4a078] group-hover:bg-[#c4a078]/12",
           ].join(" ")}
         >
           Выбрать

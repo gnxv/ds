@@ -19,14 +19,14 @@ const tones = {
     icon: "border-[#e0b06a]/30 text-[#f4e6c8] hover:border-[#e0b06a] hover:bg-[#e0b06a]/15 hover:text-[#e0b06a]",
   },
   sculpt: {
-    bg: "bg-[#0b0e12]",
-    line: "border-white/10",
-    muted: "text-[#ece6da]/55",
-    ink: "text-[#ece6da]",
-    accent: "text-[#8fa08c]",
-    active: "border-[#8fa08c]/40 bg-[#141a16] text-[#8fa08c]",
-    idle: "border-white/20 text-[#ece6da] hover:border-white/50 hover:bg-white/8",
-    icon: "border-white/20 text-[#ece6da] hover:border-white/50 hover:bg-white/8 hover:text-[#8fa08c]",
+    bg: "bg-[#16120e]",
+    line: "border-[#c4a078]/18",
+    muted: "text-[#efe4d4]/55",
+    ink: "text-[#efe4d4]",
+    accent: "text-[#c4a078]",
+    active: "border-[#c4a078]/40 bg-[#221c16] text-[#c4a078]",
+    idle: "border-[#c4a078]/30 text-[#efe4d4] hover:border-[#c4a078] hover:bg-[#c4a078]/12",
+    icon: "border-[#c4a078]/30 text-[#efe4d4] hover:border-[#c4a078] hover:bg-[#c4a078]/12 hover:text-[#c4a078]",
   },
 } as const;
 

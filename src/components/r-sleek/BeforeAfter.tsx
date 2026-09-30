@@ -13,7 +13,7 @@ const photos = [
 export function BeforeAfter() {
   return (
     <div>
-      <p className="mb-4 text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+      <p className="mb-4 text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
         Слева до · справа после
       </p>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

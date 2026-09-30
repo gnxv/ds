@@ -13,13 +13,13 @@ const palette = {
     ghost: "border border-[#e0b06a]/40 text-[#f4e6c8]",
   },
   sculpt: {
-    page: "bg-[#0b0e12] text-[#ece6da]",
-    heroGlow: "bg-[#8fa08c]/18",
-    kicker: "text-[#8fa08c]",
-    muted: "text-[#ece6da]/68",
-    card: "border-white/10 bg-[#151a21]/70",
-    button: "bg-[#ece6da] text-[#0b0e12] hover:bg-white",
-    ghost: "border border-white/20 text-[#ece6da]",
+    page: "bg-[#16120e] text-[#efe4d4]",
+    heroGlow: "bg-[#c4a078]/18",
+    kicker: "text-[#c4a078]",
+    muted: "text-[#efe4d4]/68",
+    card: "border-white/10 bg-[#1f1a15]/70",
+    button: "bg-[#efe4d4] text-[#16120e] hover:bg-white",
+    ghost: "border border-white/20 text-[#efe4d4]",
   },
 } as const;
 
