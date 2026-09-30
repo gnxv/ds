@@ -18,19 +18,6 @@ export function SplitGateway() {
 
       <div className="flex min-h-dvh flex-col md:flex-row">
         <GatewayPanel
-          href={services.solarium.slug}
-          kicker={services.solarium.kicker}
-          title={services.solarium.name}
-          line="Ровный тон в удобное время."
-          tone="sun"
-          video="/media/solarium/home.mp4"
-          poster="/media/solarium/home.jpg"
-          expanded={hover === "solarium"}
-          dimmed={hover === "rsleek"}
-          onEnter={() => setHover("solarium")}
-          onLeave={() => setHover(null)}
-        />
-        <GatewayPanel
           href={services.rsleek.slug}
           kicker="аппаратная коррекция фигуры"
           title={services.rsleek.name}
@@ -41,6 +28,19 @@ export function SplitGateway() {
           expanded={hover === "rsleek"}
           dimmed={hover === "solarium"}
           onEnter={() => setHover("rsleek")}
+          onLeave={() => setHover(null)}
+        />
+        <GatewayPanel
+          href={services.solarium.slug}
+          kicker={services.solarium.kicker}
+          title={services.solarium.name}
+          line="Ровный тон в удобное время."
+          tone="sun"
+          video="/media/solarium/home.mp4"
+          poster="/media/solarium/home.jpg"
+          expanded={hover === "solarium"}
+          dimmed={hover === "rsleek"}
+          onEnter={() => setHover("solarium")}
           onLeave={() => setHover(null)}
         />
       </div>

@@ -147,15 +147,6 @@ export function SiteHeader({
               </p>
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <Link
-                  href={services.solarium.slug}
-                  onClick={() => setOpen(false)}
-                  className={`rounded-2xl border px-4 py-5 ${t.chip} ${
-                    current === "solarium" ? t.accent : ""
-                  }`}
-                >
-                  <span className="block font-serif text-2xl">Солярий</span>
-                </Link>
-                <Link
                   href={services.rsleek.slug}
                   onClick={() => setOpen(false)}
                   className={`rounded-2xl border px-4 py-5 ${t.chip} ${
@@ -163,6 +154,15 @@ export function SiteHeader({
                   }`}
                 >
                   <span className="block font-serif text-2xl">R-Sleek</span>
+                </Link>
+                <Link
+                  href={services.solarium.slug}
+                  onClick={() => setOpen(false)}
+                  className={`rounded-2xl border px-4 py-5 ${t.chip} ${
+                    current === "solarium" ? t.accent : ""
+                  }`}
+                >
+                  <span className="block font-serif text-2xl">Солярий</span>
                 </Link>
               </div>
             </div>
@@ -183,20 +183,20 @@ function ServiceSwitch({
   return (
     <>
       <Link
-        href={services.solarium.slug}
-        className={`rounded-full px-3 py-1.5 ${
-          current === "solarium" ? toneClass.accent : toneClass.muted
-        }`}
-      >
-        Солярий
-      </Link>
-      <Link
         href={services.rsleek.slug}
         className={`rounded-full px-3 py-1.5 ${
           current === "rsleek" ? toneClass.accent : toneClass.muted
         }`}
       >
         R-Sleek
+      </Link>
+      <Link
+        href={services.solarium.slug}
+        className={`rounded-full px-3 py-1.5 ${
+          current === "solarium" ? toneClass.accent : toneClass.muted
+        }`}
+      >
+        Солярий
       </Link>
     </>
   );

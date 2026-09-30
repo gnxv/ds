@@ -54,8 +54,8 @@ export function SiteFooter({
         <nav className="flex flex-wrap gap-3">
           {(
             [
-              { href: "/solarium", label: "Солярий", key: "solarium" },
               { href: "/r-sleek", label: "R-Sleek", key: "rsleek" },
+              { href: "/solarium", label: "Солярий", key: "solarium" },
             ] as const
           ).map((item) => {
             const active = current === item.key;
