@@ -118,17 +118,18 @@ export default function SolariumPage() {
             <div className="overflow-hidden rounded-[1.2rem] border border-[#e0b06a]/20 bg-black">
               <div className="aspect-[3/4]">
                 <InlineVideo
-                  src="/media/solarium/vertical.mp4"
-                  poster="/media/solarium/vertical.jpg"
+                  src="/media/solarium/cabin-a.mp4"
+                  poster="/media/solarium/cabin-a.jpg"
                 />
               </div>
             </div>
             <div className="overflow-hidden rounded-[1.2rem] border border-[#e0b06a]/20 bg-black">
-              <img
-                src="/media/solarium/machine.jpg"
-                alt="Вертикальная кабина солярия Fiolet"
-                className="aspect-[3/4] h-full w-full object-cover"
-              />
+              <div className="aspect-[3/4]">
+                <InlineVideo
+                  src="/media/solarium/cabin-b.mp4"
+                  poster="/media/solarium/cabin-b.jpg"
+                />
+              </div>
             </div>
           </div>
         </div>
