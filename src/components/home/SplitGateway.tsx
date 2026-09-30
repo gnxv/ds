@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { BackgroundVideo } from "@/components/r-sleek/Media";
+import { BackgroundVideo, InlineVideo } from "@/components/r-sleek/Media";
 import { services, site } from "@/lib/site";
 
 type Side = "solarium" | "rsleek" | null;
@@ -36,8 +36,7 @@ export function SplitGateway() {
           title={services.solarium.name}
           line="Ровный тон в удобное время."
           tone="sun"
-          video="/media/solarium/home.mp4"
-          poster="/media/solarium/home.jpg"
+          collage
           expanded={hover === "solarium"}
           dimmed={hover === "rsleek"}
           onEnter={() => setHover("solarium")}
@@ -56,6 +55,7 @@ function GatewayPanel({
   tone,
   video,
   poster,
+  collage = false,
   expanded,
   dimmed,
   onEnter,
@@ -66,8 +66,9 @@ function GatewayPanel({
   title: string;
   line: string;
   tone: "sun" | "sculpt";
-  video: string;
-  poster: string;
+  video?: string;
+  poster?: string;
+  collage?: boolean;
   expanded: boolean;
   dimmed: boolean;
   onEnter: () => void;
@@ -94,7 +95,11 @@ function GatewayPanel({
           dimmed ? "opacity-35" : "opacity-100",
         ].join(" ")}
       >
-        <BackgroundVideo src={video} poster={poster} />
+        {collage ? (
+          <SolariumCollage />
+        ) : video && poster ? (
+          <BackgroundVideo src={video} poster={poster} />
+        ) : null}
         <div
           className={
             isSun
@@ -132,5 +137,56 @@ function GatewayPanel({
         </span>
       </div>
     </Link>
+  );
+}
+
+const solariumCollage = [
+  {
+    type: "video" as const,
+    src: "/media/solarium/cabin-a.mp4",
+    poster: "/media/solarium/cabin-a.jpg",
+  },
+  {
+    type: "video" as const,
+    src: "/media/solarium/cabin-b.mp4",
+    poster: "/media/solarium/cabin-b.jpg",
+  },
+  {
+    type: "image" as const,
+    src: "/media/solarium/clients/story-01.jpg",
+  },
+  {
+    type: "image" as const,
+    src: "/media/solarium/clients/story-03.jpg",
+  },
+  {
+    type: "video" as const,
+    src: "/media/solarium/clients/clip-01.mp4",
+    poster: "/media/solarium/clients/clip-01.jpg",
+  },
+  {
+    type: "video" as const,
+    src: "/media/solarium/clients/clip-02.mp4",
+    poster: "/media/solarium/clients/clip-02.jpg",
+  },
+];
+
+function SolariumCollage() {
+  return (
+    <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-[2px] bg-black">
+      {solariumCollage.map((item) => (
+        <div key={item.src} className="relative overflow-hidden bg-black">
+          {item.type === "video" ? (
+            <InlineVideo src={item.src} poster={item.poster} />
+          ) : (
+            <img
+              src={item.src}
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          )}
+        </div>
+      ))}
+    </div>
   );
 }
