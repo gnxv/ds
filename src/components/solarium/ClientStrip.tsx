@@ -17,12 +17,14 @@ export function ClientStrip({ items }: { items: Item[] }) {
 
     let auto = true;
     let frame = 0;
+    let pos = el.scrollLeft;
 
     const tick = () => {
       if (auto) {
         const loopAt = el.scrollWidth / 2;
-        el.scrollLeft += 0.45;
-        if (el.scrollLeft >= loopAt) el.scrollLeft -= loopAt;
+        pos += 0.7;
+        if (loopAt > 0 && pos >= loopAt) pos -= loopAt;
+        el.scrollLeft = pos;
       }
       frame = requestAnimationFrame(tick);
     };
