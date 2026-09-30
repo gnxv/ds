@@ -108,3 +108,18 @@ body {
     animation: none;
   }
 }
+
+.brand-mark {
+  transition:
+    text-shadow 0.35s ease,
+    color 0.35s ease;
+}
+
+.brand-mark:hover {
+  color: #f3e8ff;
+  text-shadow:
+    0 0 6px #f5d0fe,
+    0 0 16px #e879f9,
+    0 0 32px #c026d3,
+    0 0 48px #7e22ce;
+}

@@ -63,7 +63,7 @@ export function SiteHeader({
         <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4 md:h-16 md:px-6">
           <Link
             href="/"
-            className="font-serif shrink-0 text-[1.25rem] tracking-[0.2em] md:text-[1.35rem]"
+            className="brand-mark font-serif shrink-0 text-2xl tracking-[0.2em] md:text-[1.75rem]"
             onClick={() => setOpen(false)}
           >
             {site.name}
