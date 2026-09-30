@@ -38,6 +38,38 @@ const faqs = [
 
 const gallery = [
   {
+    src: "/media/solarium/clients/clip-01.mp4",
+    poster: "/media/solarium/clients/clip-01.jpg",
+    alt: "Клиент в студии Fiolet",
+    type: "video" as const,
+  },
+  {
+    src: "/media/solarium/clients/clip-02.mp4",
+    poster: "/media/solarium/clients/clip-02.jpg",
+    alt: "Клиент в студии Fiolet",
+    type: "video" as const,
+  },
+  {
+    src: "/media/solarium/clients/story-01.jpg",
+    alt: "Отзыв клиента Fiolet",
+  },
+  {
+    src: "/media/solarium/clients/story-02.jpg",
+    alt: "Клиент в солярии Fiolet",
+  },
+  {
+    src: "/media/solarium/clients/story-03.jpg",
+    alt: "Клиент после процедуры в Fiolet",
+  },
+  {
+    src: "/media/solarium/clients/story-04.jpg",
+    alt: "Клиент в кабинете Fiolet",
+  },
+  {
+    src: "/media/solarium/clients/story-05.jpg",
+    alt: "Клиент R-Sleek в Fiolet",
+  },
+  {
     src: "/media/solarium/client-01.jpg",
     alt: "Клиент после сеанса в солярии Fiolet",
   },
@@ -48,10 +80,6 @@ const gallery = [
   {
     src: "/media/solarium/client-upscale.jpg",
     alt: "Кабина солярия Fiolet",
-  },
-  {
-    src: "/media/solarium/atmosphere.jpg",
-    alt: "Интерьер солярия Fiolet",
   },
 ];
 
@@ -207,18 +235,24 @@ export default function SolariumPage() {
           <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#f4e6c8]/72">
             Кадры из кабинета. Лента будет расти — сейчас первые фото.
           </p>
-          <div className="mt-10 overflow-hidden">
-            <div className="photo-marquee gap-3 pr-3">
-              {[...gallery, ...gallery].map((item, index) => (
+          <div className="-mx-5 mt-10 overflow-x-auto px-5 pb-2 md:-mx-6 md:px-6">
+            <div className="flex snap-x snap-mandatory gap-3">
+              {gallery.map((item) => (
                 <figure
-                  key={`${item.src}-${index}`}
-                  className="w-[15rem] shrink-0 overflow-hidden rounded-[1.4rem] border border-[#e0b06a]/20 bg-black sm:w-[18rem]"
+                  key={item.src}
+                  className="w-[15rem] shrink-0 snap-start overflow-hidden rounded-[1.4rem] border border-[#e0b06a]/20 bg-black sm:w-[18rem]"
                 >
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    className="aspect-[3/4] w-full object-cover"
-                  />
+                  {"type" in item && item.type === "video" ? (
+                    <div className="aspect-[3/4]">
+                      <InlineVideo src={item.src} poster={item.poster} />
+                    </div>
+                  ) : (
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="aspect-[3/4] w-full object-cover"
+                    />
+                  )}
                 </figure>
               ))}
             </div>
