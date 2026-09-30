@@ -157,7 +157,7 @@ export default function SolariumPage() {
                 [
                   ["/media/solarium/cosmetics/story-hemp.jpg", "Hemp Nation в студии Fiolet"],
                   ["/media/solarium/cosmetics/story-jersey.jpg", "JWOWW Jersey Heat в студии Fiolet"],
-                  ["/media/solarium/cosmetics/jwoww-ultra.jpg", "JWOWW Ultra Dark"],
+                  ["/media/solarium/cosmetics/story-musthave.jpg", "Designer Skin Must Have в студии Fiolet"],
                   ["/media/solarium/cosmetics/jwoww-jersey.jpg", "JWOWW Jersey Heat"],
                   ["/media/solarium/cosmetics/jwoww-done.jpg", "JWOWW One and Done"],
                 ] as const
