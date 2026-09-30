@@ -144,13 +144,35 @@ export default function SolariumPage() {
             Премиум-средства для загара
           </h2>
           <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-2">
-            <div className="overflow-hidden rounded-[1.6rem] border border-[#e0b06a]/20 bg-black">
-              <div className="h-full min-h-[16rem]">
-                <InlineVideo
-                  src="/media/solarium/cabin.mp4"
-                  poster="/media/solarium/cabin.jpg"
-                />
+            <div className="grid grid-cols-3 grid-rows-2 gap-2">
+              <div className="overflow-hidden rounded-[1rem] border border-[#e0b06a]/20 bg-black">
+                <div className="aspect-[3/4] h-full">
+                  <InlineVideo
+                    src="/media/solarium/cosmetics/line.mp4"
+                    poster="/media/solarium/cosmetics/line.jpg"
+                  />
+                </div>
               </div>
+              {(
+                [
+                  ["/media/solarium/cosmetics/story-hemp.jpg", "Hemp Nation в студии Fiolet"],
+                  ["/media/solarium/cosmetics/story-jersey.jpg", "JWOWW Jersey Heat в студии Fiolet"],
+                  ["/media/solarium/cosmetics/jwoww-ultra.jpg", "JWOWW Ultra Dark"],
+                  ["/media/solarium/cosmetics/jwoww-jersey.jpg", "JWOWW Jersey Heat"],
+                  ["/media/solarium/cosmetics/jwoww-done.jpg", "JWOWW One and Done"],
+                ] as const
+              ).map(([src, alt]) => (
+                <div
+                  key={src}
+                  className="overflow-hidden rounded-[1rem] border border-[#e0b06a]/20 bg-[#2a1a10]"
+                >
+                  <img
+                    src={src}
+                    alt={alt}
+                    className="aspect-[3/4] h-full w-full object-cover"
+                  />
+                </div>
+              ))}
             </div>
             <div className="grid gap-4">
               <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
