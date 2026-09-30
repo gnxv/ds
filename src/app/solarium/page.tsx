@@ -39,6 +39,10 @@ const faqs = [
 
 const gallery = [
   {
+    src: "/media/solarium/clients/story-05.jpg",
+    alt: "Клиент R-Sleek в Fiolet",
+  },
+  {
     src: "/media/solarium/clients/clip-01.mp4",
     poster: "/media/solarium/clients/clip-01.jpg",
     alt: "Клиент в студии Fiolet",
@@ -61,14 +65,6 @@ const gallery = [
   {
     src: "/media/solarium/clients/story-04.jpg",
     alt: "Клиент в кабинете Fiolet",
-  },
-  {
-    src: "/media/solarium/clients/story-05.jpg",
-    alt: "Клиент R-Sleek в Fiolet",
-  },
-  {
-    src: "/media/solarium/client-01.jpg",
-    alt: "Клиент после сеанса в солярии Fiolet",
   },
   {
     src: "/media/solarium/client-02.jpg",
