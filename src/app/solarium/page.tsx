@@ -4,6 +4,7 @@ import {
   BackgroundVideo,
   InlineVideo,
 } from "@/components/r-sleek/Media";
+import { ClientStrip } from "@/components/solarium/ClientStrip";
 import { services, site } from "@/lib/site";
 import type { Metadata } from "next";
 
@@ -52,10 +53,6 @@ const gallery = [
   {
     src: "/media/solarium/clients/story-01.jpg",
     alt: "Отзыв клиента Fiolet",
-  },
-  {
-    src: "/media/solarium/clients/story-02.jpg",
-    alt: "Клиент в солярии Fiolet",
   },
   {
     src: "/media/solarium/clients/story-03.jpg",
@@ -235,28 +232,7 @@ export default function SolariumPage() {
           <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#f4e6c8]/72">
             Кадры из кабинета. Лента будет расти — сейчас первые фото.
           </p>
-          <div className="-mx-5 mt-10 overflow-x-auto px-5 pb-2 md:-mx-6 md:px-6">
-            <div className="flex snap-x snap-mandatory gap-3">
-              {gallery.map((item) => (
-                <figure
-                  key={item.src}
-                  className="w-[15rem] shrink-0 snap-start overflow-hidden rounded-[1.4rem] border border-[#e0b06a]/20 bg-black sm:w-[18rem]"
-                >
-                  {"type" in item && item.type === "video" ? (
-                    <div className="aspect-[3/4]">
-                      <InlineVideo src={item.src} poster={item.poster} />
-                    </div>
-                  ) : (
-                    <img
-                      src={item.src}
-                      alt={item.alt}
-                      className="aspect-[3/4] w-full object-cover"
-                    />
-                  )}
-                </figure>
-              ))}
-            </div>
-          </div>
+          <ClientStrip items={gallery} />
         </div>
       </section>
 
