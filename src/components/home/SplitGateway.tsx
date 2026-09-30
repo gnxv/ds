@@ -152,14 +152,6 @@ const solariumCollage = [
     poster: "/media/solarium/cabin-b.jpg",
   },
   {
-    type: "image" as const,
-    src: "/media/solarium/clients/story-01.jpg",
-  },
-  {
-    type: "image" as const,
-    src: "/media/solarium/clients/story-03.jpg",
-  },
-  {
     type: "video" as const,
     src: "/media/solarium/clients/clip-01.mp4",
     poster: "/media/solarium/clients/clip-01.jpg",
@@ -173,18 +165,10 @@ const solariumCollage = [
 
 function SolariumCollage() {
   return (
-    <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-[2px] bg-black">
+    <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-[2px] bg-black">
       {solariumCollage.map((item) => (
         <div key={item.src} className="relative overflow-hidden bg-black">
-          {item.type === "video" ? (
-            <InlineVideo src={item.src} poster={item.poster} />
-          ) : (
-            <img
-              src={item.src}
-              alt=""
-              className="h-full w-full object-cover"
-            />
-          )}
+          <InlineVideo src={item.src} poster={item.poster} />
         </div>
       ))}
     </div>
