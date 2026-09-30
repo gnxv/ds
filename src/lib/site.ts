@@ -56,7 +56,6 @@ export const services = {
       { href: "#how", label: "Сеанс" },
       { href: "#prices", label: "Цены" },
       { href: "#faq", label: "Вопросы" },
-      { href: "#gallery", label: "Клиенты" },
       { href: "#contact", label: "Запись" },
       { href: "#address", label: "Адрес" },
     ] satisfies NavLink[],

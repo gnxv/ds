@@ -408,16 +408,6 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <section id="gallery" className="px-5 pb-24 md:px-6">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
-            Фото
-          </p>
-          <h2 className="font-serif mt-3 text-4xl md:text-5xl">Клиенты</h2>
-          <ClientStrip items={clientGallery} tone="sculpt" />
-        </div>
-      </section>
-
       <section className="px-5 pb-16 md:px-6">
         <div className="mx-auto max-w-6xl rounded-[1.8rem] border border-white/10 px-6 py-8 md:px-10">
           <h2 className="font-serif text-3xl">Противопоказания</h2>
@@ -429,6 +419,16 @@ export default function RSleekPage() {
             первой степени часто допустим — вакуум как раз противопоказан, а
             компрессии нет, но решение только после консультации.
           </p>
+        </div>
+      </section>
+
+      <section id="gallery" className="px-5 pb-24 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
+            Фото
+          </p>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">Клиенты</h2>
+          <ClientStrip items={clientGallery} tone="sculpt" />
         </div>
       </section>
 
