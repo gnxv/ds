@@ -7,7 +7,13 @@ type Item =
   | { src: string; alt: string; type: "video"; poster: string }
   | { src: string; alt: string };
 
-export function ClientStrip({ items }: { items: Item[] }) {
+export function ClientStrip({
+  items,
+  tone = "sun",
+}: {
+  items: Item[];
+  tone?: "sun" | "sculpt";
+}) {
   const scroller = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -57,7 +63,10 @@ export function ClientStrip({ items }: { items: Item[] }) {
         {strip.map((item, index) => (
           <figure
             key={`${item.src}-${index}`}
-            className="w-[15rem] shrink-0 overflow-hidden rounded-[1.4rem] border border-[#e0b06a]/20 bg-black sm:w-[18rem]"
+            className={[
+              "w-[15rem] shrink-0 overflow-hidden rounded-[1.4rem] border bg-black sm:w-[18rem]",
+              tone === "sculpt" ? "border-[#c4a078]/20" : "border-[#e0b06a]/20",
+            ].join(" ")}
           >
             {"type" in item && item.type === "video" ? (
               <div className="aspect-[3/4]">

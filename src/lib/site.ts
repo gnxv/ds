@@ -58,6 +58,7 @@ export const services = {
       { href: "#faq", label: "Вопросы" },
       { href: "#contact", label: "Запись" },
       { href: "#address", label: "Адрес" },
+      { href: "#gallery", label: "Клиенты" },
     ] satisfies NavLink[],
   },
 } as const;

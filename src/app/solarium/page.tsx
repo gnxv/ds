@@ -5,6 +5,7 @@ import {
   InlineVideo,
 } from "@/components/r-sleek/Media";
 import { ClientStrip } from "@/components/solarium/ClientStrip";
+import { clientGallery } from "@/lib/clients";
 import { services, site } from "@/lib/site";
 import type { Metadata } from "next";
 
@@ -34,45 +35,6 @@ const faqs = [
   {
     q: "Загар останется пятнами?",
     a: "Кабина вертикальная, свет идёт равномерно. Границы купальника не рисуем. Если есть родинки или зоны, которые закрываем — скажите до сеанса.",
-  },
-];
-
-const gallery = [
-  {
-    src: "/media/solarium/clients/story-05.jpg",
-    alt: "Клиент R-Sleek в Fiolet",
-  },
-  {
-    src: "/media/solarium/clients/clip-01.mp4",
-    poster: "/media/solarium/clients/clip-01.jpg",
-    alt: "Клиент в студии Fiolet",
-    type: "video" as const,
-  },
-  {
-    src: "/media/solarium/clients/clip-02.mp4",
-    poster: "/media/solarium/clients/clip-02.jpg",
-    alt: "Клиент в студии Fiolet",
-    type: "video" as const,
-  },
-  {
-    src: "/media/solarium/clients/story-01.jpg",
-    alt: "Отзыв клиента Fiolet",
-  },
-  {
-    src: "/media/solarium/clients/story-03.jpg",
-    alt: "Клиент после процедуры в Fiolet",
-  },
-  {
-    src: "/media/solarium/clients/story-04.jpg",
-    alt: "Клиент в кабинете Fiolet",
-  },
-  {
-    src: "/media/solarium/client-02.jpg",
-    alt: "Загар в вертикальной кабине Fiolet",
-  },
-  {
-    src: "/media/solarium/client-upscale.jpg",
-    alt: "Кабина солярия Fiolet",
   },
 ];
 
@@ -225,10 +187,7 @@ export default function SolariumPage() {
             Фото
           </p>
           <h2 className="font-serif mt-3 text-4xl md:text-5xl">Клиенты</h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-8 text-[#f4e6c8]/72">
-            Кадры из кабинета. Лента будет расти — сейчас первые фото.
-          </p>
-          <ClientStrip items={gallery} />
+          <ClientStrip items={clientGallery} />
         </div>
       </section>
 

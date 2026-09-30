@@ -5,6 +5,8 @@ import {
   BackgroundVideo,
   InlineVideo,
 } from "@/components/r-sleek/Media";
+import { ClientStrip } from "@/components/solarium/ClientStrip";
+import { clientGallery } from "@/lib/clients";
 import { services, site } from "@/lib/site";
 import type { Metadata } from "next";
 
@@ -515,6 +517,16 @@ export default function RSleekPage() {
               allowFullScreen
             />
           </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="px-5 pb-24 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
+            Фото
+          </p>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">Клиенты</h2>
+          <ClientStrip items={clientGallery} tone="sculpt" />
         </div>
       </section>
 
