@@ -439,46 +439,48 @@ export default function RSleekPage() {
         </div>
       </section>
 
-      <section className="px-5 pb-14 md:px-6 md:pb-16">
-        <div className="mx-auto max-w-6xl">
+      <section className="px-5 pb-16 md:px-6 md:pb-20">
+        <div className="mx-auto max-w-4xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
             Мастера
           </p>
           <h2 className="font-serif mt-3 text-3xl md:text-4xl">
             Кто ведёт процедуру
           </h2>
-          <div className="mt-6 grid gap-3 md:grid-cols-2">
-            <article className="grid grid-cols-[7.5rem_1fr] items-center gap-4 overflow-hidden rounded-[1.2rem] border border-white/10 p-3 sm:grid-cols-[8.5rem_1fr]">
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <article className="overflow-hidden rounded-[1.4rem] border border-white/10">
               <img
                 src="/media/r-sleek/master-anna.jpg"
                 alt="Анна Волкова, мастер R-Sleek"
-                className="aspect-[3/4] w-full rounded-[0.9rem] object-cover object-top"
+                className="aspect-[4/5] w-full object-cover object-top"
               />
-              <div className="pr-2">
+              <div className="p-5">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
                   Мастер R-Sleek
                 </p>
-                <h3 className="font-serif mt-1 text-2xl">Анна Волкова</h3>
-                <p className="mt-2 text-sm leading-6 text-[#ece6da]/68">
-                  Двухфазный протокол, спокойный ход. Живот, бока, бёдра,
-                  ягодицы.
+                <h3 className="font-serif mt-2 text-2xl">Анна Волкова</h3>
+                <p className="mt-3 text-sm leading-6 text-[#ece6da]/68">
+                  Ведёт двухфазный протокол: лимфодренаж и локальную коррекцию.
+                  Спокойный ход, без гонки по минутам. Работает с животом,
+                  боками, бёдрами и ягодицами.
                 </p>
               </div>
             </article>
-            <article className="grid grid-cols-[7.5rem_1fr] items-center gap-4 overflow-hidden rounded-[1.2rem] border border-white/10 p-3 sm:grid-cols-[8.5rem_1fr]">
+            <article className="overflow-hidden rounded-[1.4rem] border border-white/10">
               <img
                 src="/media/r-sleek/master-dmitry.jpg"
                 alt="Дмитрий Орлов, мастер R-Sleek"
-                className="aspect-[3/4] w-full rounded-[0.9rem] object-cover object-top"
+                className="aspect-[4/5] w-full object-cover object-top"
               />
-              <div className="pr-2">
+              <div className="p-5">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
                   Мастер R-Sleek
                 </p>
-                <h3 className="font-serif mt-1 text-2xl">Дмитрий Орлов</h3>
-                <p className="mt-2 text-sm leading-6 text-[#ece6da]/68">
-                  Слоты 60 минут на несколько зон. Нажим под кожу, без режима
-                  «на максимум».
+                <h3 className="font-serif mt-2 text-2xl">Дмитрий Орлов</h3>
+                <p className="mt-3 text-sm leading-6 text-[#ece6da]/68">
+                  Берёт расширенные слоты на 60 минут, когда зон несколько.
+                  Следит за нажимом под чувствительность кожи и не гонит
+                  ролики «на максимум».
                 </p>
               </div>
             </article>
