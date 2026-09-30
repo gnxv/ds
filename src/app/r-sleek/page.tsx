@@ -70,7 +70,7 @@ export default function RSleekPage() {
             Аппаратная коррекция фигуры
           </p>
           <h1 className="font-serif mt-4 max-w-4xl text-4xl leading-[0.96] sm:text-6xl md:text-7xl">
-            Минус 800&nbsp;г
+            До минус 800&nbsp;г
             <br />
             уже после первой процедуры.
           </h1>
@@ -436,6 +436,55 @@ export default function RSleekPage() {
             к концу курса.
           </p>
           <ContactActions />
+        </div>
+      </section>
+
+      <section className="px-5 pb-20 md:px-6 md:pb-28">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#8fa08c]">
+            Мастера
+          </p>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">
+            Кто ведёт процедуру
+          </h2>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            <article className="overflow-hidden rounded-[1.6rem] border border-white/10">
+              <img
+                src="/media/r-sleek/master-anna.jpg"
+                alt="Анна Волкова, мастер R-Sleek"
+                className="aspect-[4/5] w-full object-cover object-top"
+              />
+              <div className="p-7">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                  Мастер R-Sleek
+                </p>
+                <h3 className="font-serif mt-2 text-3xl">Анна Волкова</h3>
+                <p className="mt-4 text-sm leading-7 text-[#ece6da]/68">
+                  Ведёт двухфазный протокол: лимфодренаж и локальную коррекцию.
+                  Спокойный ход, без гонки по минутам. Работает с животом,
+                  боками, бёдрами и ягодицами.
+                </p>
+              </div>
+            </article>
+            <article className="overflow-hidden rounded-[1.6rem] border border-white/10">
+              <img
+                src="/media/r-sleek/master-dmitry.jpg"
+                alt="Дмитрий Орлов, мастер R-Sleek"
+                className="aspect-[4/5] w-full object-cover object-top"
+              />
+              <div className="p-7">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#8fa08c]">
+                  Мастер R-Sleek
+                </p>
+                <h3 className="font-serif mt-2 text-3xl">Дмитрий Орлов</h3>
+                <p className="mt-4 text-sm leading-7 text-[#ece6da]/68">
+                  Берёт расширенные слоты на 60 минут, когда зон несколько.
+                  Следит за нажимом под чувствительность кожи и не гонит
+                  ролики «на максимум».
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
