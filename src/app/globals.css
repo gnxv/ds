@@ -133,9 +133,8 @@ body {
 
 .book-glow:hover {
   color: #f3e8ff;
-  border-color: #e879f9;
+  border-color: #e9b4f0;
   box-shadow:
-    0 0 6px #f5d0fe,
-    0 0 16px #e879f9,
-    0 0 32px #c026d3;
+    0 0 8px rgb(245 208 254 / 0.45),
+    0 0 16px rgb(232 121 249 / 0.28);
 }

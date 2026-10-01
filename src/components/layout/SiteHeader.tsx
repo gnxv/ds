@@ -93,9 +93,18 @@ export function SiteHeader({
             </div>
           </div>
 
+          <a
+            href={site.booking}
+            target="_blank"
+            rel="noreferrer"
+            className={`book-glow ml-auto inline-flex items-center rounded-full border px-3.5 py-2 text-[10px] uppercase tracking-[0.18em] lg:hidden ${t.chip} ${t.ink}`}
+          >
+            Запись
+          </a>
+
           <button
             type="button"
-            className={`relative z-50 ml-auto flex h-11 w-11 items-center justify-center rounded-full border lg:hidden ${t.chip} ${t.ink}`}
+            className={`relative z-50 flex h-11 w-11 items-center justify-center rounded-full border lg:hidden ${t.chip} ${t.ink}`}
             aria-label={open ? "Закрыть меню" : "Открыть меню"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
