@@ -80,7 +80,12 @@ export const socials = [
 const pill =
   "inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-3 text-[11px] uppercase tracking-[0.18em] transition duration-300 hover:border-white/45 hover:bg-white/5";
 
-export function ContactActions() {
+export function ContactActions({ tone = "sculpt" }: { tone?: "sun" | "sculpt" }) {
+  const bookingClass =
+    tone === "sun"
+      ? "book-pulse-sun bg-[#e0b06a] text-[#160e09]"
+      : "book-pulse-sculpt bg-[#c4a078] text-[#16120e]";
+
   return (
     <div className="mt-8 flex flex-wrap gap-3">
       <a
@@ -94,7 +99,7 @@ export function ContactActions() {
         href={site.booking}
         target="_blank"
         rel="noreferrer"
-        className="inline-flex items-center gap-2 rounded-full bg-[#ece6da] px-4 py-3 text-[11px] uppercase tracking-[0.18em] text-[#0b0e12]"
+        className={`inline-flex items-center gap-2 rounded-full px-4 py-3 text-[11px] uppercase tracking-[0.18em] ${bookingClass}`}
       >
         Онлайн-запись
       </a>

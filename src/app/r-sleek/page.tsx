@@ -444,14 +444,14 @@ export default function RSleekPage() {
             <article className="overflow-hidden rounded-[1.4rem] border border-white/10">
               <img
                 src="/media/r-sleek/master-dmitry.jpg"
-                alt="Дмитрий Орлов, мастер R-Sleek"
+                alt="Дмитрий, мастер R-Sleek"
                 className="aspect-[4/5] w-full object-cover object-top"
               />
               <div className="p-5">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   Мастер R-Sleek
                 </p>
-                <h3 className="font-serif mt-2 text-2xl">Дмитрий Орлов</h3>
+                <h3 className="font-serif mt-2 text-2xl">Дмитрий</h3>
                 <p className="mt-3 text-sm leading-6 text-[#efe4d4]/68">
                   Ведёт сеанс целиком: отток, затем локальная работа с силуэтом.
                   Живот, бока, бёдра, ягодицы.
@@ -461,14 +461,14 @@ export default function RSleekPage() {
             <article className="overflow-hidden rounded-[1.4rem] border border-white/10">
               <img
                 src="/media/r-sleek/master-anna.jpg"
-                alt="Анна Волкова, мастер R-Sleek"
+                alt="Ксения, мастер R-Sleek"
                 className="aspect-[4/5] w-full object-cover object-top"
               />
               <div className="p-5">
                 <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
                   Мастер R-Sleek
                 </p>
-                <h3 className="font-serif mt-2 text-2xl">Анна Волкова</h3>
+                <h3 className="font-serif mt-2 text-2xl">Ксения</h3>
                 <p className="mt-3 text-sm leading-6 text-[#efe4d4]/68">
                   Та же двухфазная методика. Нажим и скорость роликов
                   подбирает под кожу, без гонки по минутам.
@@ -493,7 +493,7 @@ export default function RSleekPage() {
             заметны. Эффект накапливается к 5–6-й процедуре и максимума достигает
             к концу курса.
           </p>
-          <ContactActions />
+          <ContactActions tone="sculpt" />
         </div>
       </section>
 

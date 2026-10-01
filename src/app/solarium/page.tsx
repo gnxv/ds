@@ -292,7 +292,7 @@ export default function SolariumPage() {
             Напишите, на сколько минут записать, или возьмите безлимит на
             год. Подскажем время под фототип и что нанести до сеанса.
           </p>
-          <ContactActions />
+          <ContactActions tone="sun" />
         </div>
       </section>
 

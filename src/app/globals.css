@@ -138,3 +138,38 @@ body {
     0 0 8px rgb(245 208 254 / 0.45),
     0 0 16px rgb(232 121 249 / 0.28);
 }
+
+@keyframes book-pulse-sculpt {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(196 160 120 / 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgb(196 160 120 / 0);
+  }
+}
+
+@keyframes book-pulse-sun {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(224 176 106 / 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgb(224 176 106 / 0);
+  }
+}
+
+.book-pulse-sculpt {
+  animation: book-pulse-sculpt 2.4s ease-out infinite;
+}
+
+.book-pulse-sun {
+  animation: book-pulse-sun 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-pulse-sculpt,
+  .book-pulse-sun {
+    animation: none;
+  }
+}
