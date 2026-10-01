@@ -527,7 +527,9 @@ export default function RSleekPage() {
               allowFullScreen
             />
           </div>
-          <h2 className="font-serif mt-12 text-4xl md:text-5xl">Важно</h2>
+          <p className="mt-12 text-[11px] uppercase tracking-[0.32em] text-[#c4a078]">
+            Важно
+          </p>
           <p className="mt-5 max-w-3xl text-[15px] leading-8 text-[#efe4d4]/72">
             Услуга не является медицинской процедурой и не относится к
             медицинской деятельности. Имеются противопоказания. При наличии
