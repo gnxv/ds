@@ -79,9 +79,7 @@ export function SiteHeader({
 
           <div className="ml-auto hidden items-center gap-2 lg:flex">
             <a
-              href={site.booking}
-              target="_blank"
-              rel="noreferrer"
+              href="#contact"
               className={`book-glow inline-flex items-center rounded-full border px-4 py-2.5 text-[10px] uppercase tracking-[0.18em] ${t.chip} ${t.ink}`}
             >
               Запись
@@ -94,9 +92,8 @@ export function SiteHeader({
           </div>
 
           <a
-            href={site.booking}
-            target="_blank"
-            rel="noreferrer"
+            href="#contact"
+            onClick={() => setOpen(false)}
             className={`book-glow ml-auto inline-flex items-center rounded-full border px-3.5 py-2 text-[10px] uppercase tracking-[0.18em] lg:hidden ${t.chip} ${t.ink}`}
           >
             Запись
