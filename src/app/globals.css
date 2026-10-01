@@ -109,10 +109,24 @@ body {
   }
 }
 
-.brand-mark {
+.nav-glow {
   transition:
-    text-shadow 0.35s ease,
-    color 0.35s ease;
+    color 0.35s ease,
+    text-shadow 0.35s ease;
+}
+
+.nav-glow-sun:hover {
+  color: #f4e6c8;
+  text-shadow:
+    0 0 8px rgb(224 176 106 / 0.55),
+    0 0 16px rgb(224 176 106 / 0.28);
+}
+
+.nav-glow-sculpt:hover {
+  color: #efe4d4;
+  text-shadow:
+    0 0 8px rgb(196 160 120 / 0.5),
+    0 0 16px rgb(196 160 120 / 0.26);
 }
 
 .brand-mark:hover {

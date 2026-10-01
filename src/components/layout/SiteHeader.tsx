@@ -71,7 +71,11 @@ export function SiteHeader({
 
           <nav className="mx-auto hidden items-center gap-6 text-[11px] uppercase tracking-[0.2em] lg:flex">
             {sections.map((item) => (
-              <a key={item.href} href={item.href} className={t.muted}>
+              <a
+                key={item.href}
+                href={item.href}
+                className={`nav-glow ${tone === "sun" ? "nav-glow-sun" : "nav-glow-sculpt"} ${t.muted}`}
+              >
                 {item.label}
               </a>
             ))}
@@ -149,7 +153,7 @@ export function SiteHeader({
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpen(false)}
-                    className="border-b border-white/10 py-4 font-serif text-[2rem] leading-none"
+                    className={`border-b border-white/10 py-4 font-serif text-[2rem] leading-none nav-glow ${tone === "sun" ? "nav-glow-sun" : "nav-glow-sculpt"}`}
                   >
                     {item.label}
                   </a>
