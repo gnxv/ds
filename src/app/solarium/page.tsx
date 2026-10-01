@@ -165,7 +165,7 @@ export default function SolariumPage() {
                 </p>
                 <p className="mt-4 text-sm leading-7 text-[#f4e6c8]/72">
                   Ускорители и кремы под тип кожи. Цвет берётся быстрее и
-                  ложится ровнее, кожа не сушится насухую.
+                  ложится ровнее, кожа не пересушивается.
                 </p>
               </article>
               <article className="rounded-[1.6rem] border border-[#e0b06a]/20 p-7">
@@ -231,8 +231,8 @@ export default function SolariumPage() {
               <p className="font-serif mt-8 text-2xl">На год</p>
               <p className="font-serif mt-3 text-5xl">40 000 ₽</p>
               <p className="mt-6 text-sm leading-7 text-[#f4e6c8]/70">
-                Ходите в своём ритме весь год. Минуты не сгорают пакетом — просто
-                приходите, когда нужен тон.
+                Ходите в своём ритме весь год. Без лимита по минутам — приходите,
+                когда нужен тон.
               </p>
             </article>
           </div>
@@ -289,7 +289,7 @@ export default function SolariumPage() {
             Приходите за тоном
           </h2>
           <p className="mt-5 max-w-2xl text-sm leading-7 text-[#f4e6c8]/65">
-            Напишите, на сколько минут записываем, или возьмите безлимит на
+            Напишите, на сколько минут записать, или возьмите безлимит на
             год. Подскажем время под фототип и что нанести до сеанса.
           </p>
           <ContactActions />
