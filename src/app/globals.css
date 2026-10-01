@@ -123,3 +123,19 @@ body {
     0 0 32px #c026d3,
     0 0 48px #7e22ce;
 }
+
+.book-glow {
+  transition:
+    box-shadow 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.book-glow:hover {
+  color: #f3e8ff;
+  border-color: #e879f9;
+  box-shadow:
+    0 0 6px #f5d0fe,
+    0 0 16px #e879f9,
+    0 0 32px #c026d3;
+}

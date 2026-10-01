@@ -77,19 +77,20 @@ export function SiteHeader({
             ))}
           </nav>
 
-          <a
-            href={site.booking}
-            target="_blank"
-            rel="noreferrer"
-            className={`ml-auto hidden rounded-full border px-3 py-1.5 text-[10px] uppercase tracking-[0.18em] lg:inline-flex ${t.chip} ${t.ink}`}
-          >
-            Запись
-          </a>
-
-          <div
-            className={`hidden items-center rounded-full border px-1 py-1 text-[10px] uppercase tracking-[0.18em] lg:flex ${t.chip}`}
-          >
-            <ServiceSwitch current={current} toneClass={t} />
+          <div className="ml-auto hidden items-center gap-2 lg:flex">
+            <a
+              href={site.booking}
+              target="_blank"
+              rel="noreferrer"
+              className={`book-glow inline-flex items-center rounded-full border px-4 py-2.5 text-[10px] uppercase tracking-[0.18em] ${t.chip} ${t.ink}`}
+            >
+              Запись
+            </a>
+            <div
+              className={`flex items-center rounded-full border px-1 py-1 text-[10px] uppercase tracking-[0.18em] ${t.chip}`}
+            >
+              <ServiceSwitch current={current} toneClass={t} />
+            </div>
           </div>
 
           <button

@@ -75,7 +75,7 @@ export function SiteFooter({
           })}
         </nav>
 
-        <div className="md:justify-self-end">
+        <div className="flex flex-col items-start md:items-end md:justify-self-end">
           <p className={`text-[11px] uppercase tracking-[0.28em] ${t.accent}`}>
             Контакты
           </p>
