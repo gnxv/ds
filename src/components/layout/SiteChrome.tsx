@@ -41,7 +41,7 @@ export function SiteFooter({
 
   return (
     <footer className={`border-t ${t.line} ${t.bg}`}>
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 md:grid-cols-[1.1fr_auto_1fr] md:items-end">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-12 md:flex-row md:items-end md:justify-between">
         <div>
           <Link href="/" className="brand-mark font-serif text-3xl tracking-[0.2em]">
             {site.name}
