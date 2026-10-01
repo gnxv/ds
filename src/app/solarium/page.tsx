@@ -326,8 +326,8 @@ export default function SolariumPage() {
               allowFullScreen
             />
           </div>
-          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#f4e6c8]/55">
-            <span className="text-[#e0b06a]">Важно. </span>
+          <h2 className="font-serif mt-12 text-4xl md:text-5xl">Важно</h2>
+          <p className="mt-5 max-w-3xl text-[15px] leading-8 text-[#f4e6c8]/72">
             Посещение солярия имеет противопоказания. Перед посещением
             ознакомьтесь с перечнем противопоказаний. При наличии сомнений
             проконсультируйтесь с врачом.
