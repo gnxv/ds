@@ -11,7 +11,7 @@ import { services, site } from "@/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "R-Sleek — аппаратный роликовый массаж",
+  title: "R-Sleek — Коррекция фигуры",
   description:
     "R-Sleek в Fiolet: минус объёмы, меньше отёка, более подтянутый силуэт. После первого сеанса уходит до 800 г жидкости. 40 и 60 минут.",
 };
@@ -443,23 +443,6 @@ export default function RSleekPage() {
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <article className="overflow-hidden rounded-[1.4rem] border border-white/10">
               <img
-                src="/media/r-sleek/master-anna.jpg"
-                alt="Анна Волкова, мастер R-Sleek"
-                className="aspect-[4/5] w-full object-cover object-top"
-              />
-              <div className="p-5">
-                <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
-                  Мастер R-Sleek
-                </p>
-                <h3 className="font-serif mt-2 text-2xl">Анна Волкова</h3>
-                <p className="mt-3 text-sm leading-6 text-[#efe4d4]/68">
-                  Ведёт сеанс целиком: отток, затем локальная работа с силуэтом.
-                  Живот, бока, бёдра, ягодицы.
-                </p>
-              </div>
-            </article>
-            <article className="overflow-hidden rounded-[1.4rem] border border-white/10">
-              <img
                 src="/media/r-sleek/master-dmitry.jpg"
                 alt="Дмитрий Орлов, мастер R-Sleek"
                 className="aspect-[4/5] w-full object-cover object-top"
@@ -469,6 +452,23 @@ export default function RSleekPage() {
                   Мастер R-Sleek
                 </p>
                 <h3 className="font-serif mt-2 text-2xl">Дмитрий Орлов</h3>
+                <p className="mt-3 text-sm leading-6 text-[#efe4d4]/68">
+                  Ведёт сеанс целиком: отток, затем локальная работа с силуэтом.
+                  Живот, бока, бёдра, ягодицы.
+                </p>
+              </div>
+            </article>
+            <article className="overflow-hidden rounded-[1.4rem] border border-white/10">
+              <img
+                src="/media/r-sleek/master-anna.jpg"
+                alt="Анна Волкова, мастер R-Sleek"
+                className="aspect-[4/5] w-full object-cover object-top"
+              />
+              <div className="p-5">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-[#c4a078]">
+                  Мастер R-Sleek
+                </p>
+                <h3 className="font-serif mt-2 text-2xl">Анна Волкова</h3>
                 <p className="mt-3 text-sm leading-6 text-[#efe4d4]/68">
                   Та же двухфазная методика. Нажим и скорость роликов
                   подбирает под кожу, без гонки по минутам.
@@ -527,6 +527,14 @@ export default function RSleekPage() {
               allowFullScreen
             />
           </div>
+          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#efe4d4]/55">
+            <span className="text-[#c4a078]">Важно. </span>
+            Услуга не является медицинской процедурой и не относится к
+            медицинской деятельности. Имеются противопоказания. При наличии
+            заболеваний, жалоб или сомнений относительно возможности проведения
+            процедуры рекомендуется предварительно проконсультироваться с
+            врачом.
+          </p>
         </div>
       </section>
 

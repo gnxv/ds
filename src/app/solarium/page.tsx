@@ -207,6 +207,10 @@ export default function SolariumPage() {
               </p>
               <div className="mt-8 space-y-5">
                 <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
+                  <p className="font-serif text-2xl">Разовое посещение</p>
+                  <p className="font-serif text-3xl">110 ₽ / мин</p>
+                </div>
+                <div className="flex items-end justify-between gap-4 border-b border-white/8 pb-4">
                   <p className="font-serif text-2xl">50 минут</p>
                   <p className="font-serif text-3xl">4 500 ₽</p>
                 </div>
@@ -322,6 +326,12 @@ export default function SolariumPage() {
               allowFullScreen
             />
           </div>
+          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#f4e6c8]/55">
+            <span className="text-[#e0b06a]">Важно. </span>
+            Посещение солярия имеет противопоказания. Перед посещением
+            ознакомьтесь с перечнем противопоказаний. При наличии сомнений
+            проконсультируйтесь с врачом.
+          </p>
         </div>
       </section>
 

@@ -17,11 +17,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Fiolet — солярий и R-Sleek",
+    default: "Fiolet — R-Sleek и Солярий",
     template: "%s · Fiolet",
   },
   description:
-    "Fiolet: два соседних кабинета в гостинице — солярий и процедура R-Sleek для коррекции фигуры.",
+    "Fiolet: два соседних кабинета в гостинице — R-Sleek и солярий.",
 };
 
 export default function RootLayout({
