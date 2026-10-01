@@ -169,7 +169,7 @@ export function SiteHeader({
                 <Link
                   href={services.rsleek.slug}
                   onClick={() => setOpen(false)}
-                  className={`rounded-2xl border px-4 py-5 ${t.chip} ${
+                  className={`rounded-2xl border px-4 py-5 nav-glow nav-glow-sculpt ${t.chip} ${
                     current === "rsleek" ? t.accent : ""
                   }`}
                 >
@@ -178,7 +178,7 @@ export function SiteHeader({
                 <Link
                   href={services.solarium.slug}
                   onClick={() => setOpen(false)}
-                  className={`rounded-2xl border px-4 py-5 ${t.chip} ${
+                  className={`rounded-2xl border px-4 py-5 nav-glow nav-glow-sun ${t.chip} ${
                     current === "solarium" ? t.accent : ""
                   }`}
                 >
@@ -212,7 +212,7 @@ function ServiceSwitch({
     <>
       <Link
         href={services.rsleek.slug}
-        className={`rounded-full px-3 py-1.5 ${
+        className={`nav-glow nav-glow-sculpt rounded-full px-3 py-1.5 ${
           current === "rsleek" ? toneClass.accent : toneClass.muted
         }`}
       >
@@ -220,7 +220,7 @@ function ServiceSwitch({
       </Link>
       <Link
         href={services.solarium.slug}
-        className={`rounded-full px-3 py-1.5 ${
+        className={`nav-glow nav-glow-sun rounded-full px-3 py-1.5 ${
           current === "solarium" ? toneClass.accent : toneClass.muted
         }`}
       >
