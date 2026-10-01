@@ -86,6 +86,14 @@ export function SiteFooter({
             <PhoneIcon />
             {site.phone}
           </a>
+          <a
+            href={site.booking}
+            target="_blank"
+            rel="noreferrer"
+            className={`mt-3 inline-flex rounded-full border px-4 py-2 text-[11px] uppercase tracking-[0.18em] transition duration-300 hover:-translate-y-0.5 ${t.idle}`}
+          >
+            Онлайн-запись
+          </a>
           <div className="mt-4 flex flex-wrap gap-2">
             {socials.map((item) => (
               <a

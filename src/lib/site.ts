@@ -10,6 +10,7 @@ export const site = {
     "https://yandex.ru/map-widget/v1/?ll=38.067614%2C44.555612&z=16&ol=biz&oid=108706549072",
   phone: "+7 952 838-84-84",
   phoneHref: "tel:+79528388484",
+  booking: "https://salon1c.ru/widget-org/812451251",
   telegram: "https://t.me/+79528388484",
   whatsapp: "https://wa.me/79528388484",
   instagram: "https://instagram.com/fiolet2018",

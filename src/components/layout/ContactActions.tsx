@@ -90,6 +90,14 @@ export function ContactActions() {
         <PhoneIcon />
         {site.phone}
       </a>
+      <a
+        href={site.booking}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-2 rounded-full bg-[#ece6da] px-4 py-3 text-[11px] uppercase tracking-[0.18em] text-[#0b0e12]"
+      >
+        Онлайн-запись
+      </a>
       <a href={site.telegram} target="_blank" rel="noreferrer" className={pill}>
         <TelegramIcon />
         Telegram

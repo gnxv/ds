@@ -77,8 +77,17 @@ export function SiteHeader({
             ))}
           </nav>
 
+          <a
+            href={site.booking}
+            target="_blank"
+            rel="noreferrer"
+            className={`ml-auto hidden rounded-full border px-3 py-1.5 text-[10px] uppercase tracking-[0.18em] lg:inline-flex ${t.chip} ${t.ink}`}
+          >
+            Запись
+          </a>
+
           <div
-            className={`ml-auto hidden items-center rounded-full border px-1 py-1 text-[10px] uppercase tracking-[0.18em] lg:flex ${t.chip}`}
+            className={`hidden items-center rounded-full border px-1 py-1 text-[10px] uppercase tracking-[0.18em] lg:flex ${t.chip}`}
           >
             <ServiceSwitch current={current} toneClass={t} />
           </div>
@@ -165,6 +174,14 @@ export function SiteHeader({
                   <span className="block font-serif text-2xl">Солярий</span>
                 </Link>
               </div>
+              <a
+                href={site.booking}
+                target="_blank"
+                rel="noreferrer"
+                className={`mt-6 inline-flex rounded-full border px-4 py-3 text-[11px] uppercase tracking-[0.18em] ${t.chip} ${t.ink}`}
+              >
+                Онлайн-запись
+              </a>
             </div>
           </div>
         </div>
