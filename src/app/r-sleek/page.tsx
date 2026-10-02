@@ -14,6 +14,15 @@ export const metadata: Metadata = {
   title: "R-Sleek — Коррекция фигуры",
   description:
     "R-Sleek в Fiolet: минус объёмы, меньше отёка, более подтянутый силуэт. После первого сеанса уходит до 800 г жидкости. 40 и 60 минут.",
+  alternates: {
+    canonical: "/r-sleek",
+  },
+  openGraph: {
+    title: "R-Sleek — коррекция фигуры · Fiolet",
+    description:
+      "R-Sleek в Fiolet: минус объёмы, меньше отёка, более подтянутый силуэт. После первого сеанса уходит до 800 г жидкости. 40 и 60 минут.",
+    url: "https://fiolet-gel.ru/r-sleek",
+  },
 };
 
 const faqs = [

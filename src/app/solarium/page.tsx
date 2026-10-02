@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   title: "Солярий",
   description:
     "Солярий Fiolet в Геленджике: ровный загар, вертикальная кабина и премиум-косметика. 50, 100, 150 минут и безлимит на год.",
+  alternates: {
+    canonical: "/solarium",
+  },
+  openGraph: {
+    title: "Солярий · Fiolet",
+    description:
+      "Солярий Fiolet в Геленджике: ровный загар, вертикальная кабина и премиум-косметика. 50, 100, 150 минут и безлимит на год.",
+    url: "https://fiolet-gel.ru/solarium",
+  },
 };
 
 const faqs = [

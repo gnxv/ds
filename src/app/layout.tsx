@@ -22,16 +22,10 @@ export const metadata: Metadata = {
     template: "%s · Fiolet",
   },
   description: "Fiolet · Коррекция фигуры R-Sleek и Солярий.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "ru_RU",
-    url: "https://fiolet-gel.ru",
     siteName: "Fiolet",
-    title: "Fiolet · Коррекция фигуры R-Sleek и Солярий",
-    description: "Fiolet · Коррекция фигуры R-Sleek и Солярий.",
   },
   robots: {
     index: true,
