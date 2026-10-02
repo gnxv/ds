@@ -23,7 +23,7 @@ export function SplitGateway() {
           href={services.rsleek.slug}
           kicker="аппаратная коррекция фигуры"
           title={services.rsleek.name}
-          line="До минус 800 г уже после первой процедуры."
+          line="До минус 800 грамм жидкости уже после первой процедуры."
           tone="sculpt"
           video="/media/r-sleek/manipula.mp4"
           poster="/media/r-sleek/manipula-poster.jpg"
@@ -135,7 +135,7 @@ function GatewayPanel({
               : "border-[#c4a078]/45 text-[#efe4d4] group-hover:border-[#c4a078] group-hover:bg-[#c4a078]/12",
           ].join(" ")}
         >
-          Выбрать
+          Перейти
         </span>
       </div>
     </Link>
