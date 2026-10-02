@@ -98,7 +98,7 @@ export default function RSleekPage() {
               Записаться
             </a>
             <a
-              href="#how"
+              href="#method"
               className="rounded-full border border-white/25 px-5 py-3 text-[11px] uppercase tracking-[0.2em]"
             >
               Как проходит сеанс
