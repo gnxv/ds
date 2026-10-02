@@ -338,14 +338,6 @@ export default function SolariumPage() {
               allowFullScreen
             />
           </div>
-          <p className="mt-12 text-[11px] uppercase tracking-[0.32em] text-[#e0b06a]">
-            Важно
-          </p>
-          <p className="mt-5 max-w-3xl text-[15px] leading-8 text-[#f4e6c8]/72">
-            Посещение солярия имеет противопоказания. Перед посещением
-            ознакомьтесь с перечнем противопоказаний. При наличии сомнений
-            проконсультируйтесь с врачом.
-          </p>
         </div>
       </section>
 
@@ -373,6 +365,14 @@ export default function SolariumPage() {
               Fiolet на карте Геленджика — Яндекс Карты
             </a>
           </div>
+          <p className="mt-12 text-[11px] uppercase tracking-[0.32em] text-[#e0b06a]">
+            Важно
+          </p>
+          <p className="mt-5 max-w-3xl text-[15px] leading-8 text-[#f4e6c8]/72">
+            Посещение солярия имеет противопоказания. Перед посещением
+            ознакомьтесь с перечнем противопоказаний. При наличии сомнений
+            проконсультируйтесь с врачом.
+          </p>
         </div>
       </section>
 
