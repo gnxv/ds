@@ -41,6 +41,7 @@ export const services = {
       { href: "#faq", label: "Вопросы" },
       { href: "#contact", label: "Запись" },
       { href: "#address", label: "Адрес" },
+      { href: "#reviews", label: "Отзывы" },
     ] satisfies NavLink[],
   },
   rsleek: {
@@ -54,11 +55,11 @@ export const services = {
       { href: "#method", label: "Принцип" },
       { href: "#about", label: "Процедура" },
       { href: "#effect", label: "Результат" },
-      { href: "#how", label: "Сеанс" },
       { href: "#prices", label: "Цены" },
       { href: "#faq", label: "Вопросы" },
       { href: "#contact", label: "Запись" },
       { href: "#address", label: "Адрес" },
+      { href: "#reviews", label: "Отзывы" },
     ] satisfies NavLink[],
   },
 } as const;

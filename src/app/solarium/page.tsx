@@ -349,6 +349,33 @@ export default function SolariumPage() {
         </div>
       </section>
 
+      <section id="reviews" className="px-5 pb-24 md:px-6">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-[#e0b06a]">
+            Отзывы
+          </p>
+          <h2 className="font-serif mt-3 text-4xl md:text-5xl">
+            Что пишут на Яндекс Картах
+          </h2>
+          <div className="relative mt-8 h-[800px] max-w-[560px] overflow-hidden rounded-[1.6rem] border border-[#e0b06a]/20">
+            <iframe
+              title="Отзывы Fiolet на Яндекс Картах"
+              src="https://yandex.ru/maps-reviews-widget/108706549072?comments"
+              className="h-full w-full bg-[#160e09]"
+              loading="lazy"
+            />
+            <a
+              href="https://yandex.ru/maps/org/fiolet/108706549072/"
+              target="_blank"
+              rel="noreferrer"
+              className="absolute bottom-2 left-0 block w-full truncate px-4 text-center text-[10px] text-[#b3b3b3]"
+            >
+              Fiolet на карте Геленджика — Яндекс Карты
+            </a>
+          </div>
+        </div>
+      </section>
+
       <SiteFooter tone="sun" current="solarium" />
     </div>
   );
