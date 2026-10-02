@@ -16,12 +16,27 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fiolet-gel.ru"),
   title: {
     default: "Fiolet — R-Sleek и Солярий",
     template: "%s · Fiolet",
   },
-  description:
-    "Fiolet: два соседних кабинета в гостинице — R-Sleek и солярий.",
+  description: "Fiolet: R-Sleek - коррекция фигуры и Солярий.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    url: "https://fiolet-gel.ru",
+    siteName: "Fiolet",
+    title: "Fiolet — R-Sleek и Солярий",
+    description: "Fiolet: R-Sleek - коррекция фигуры и Солярий.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
