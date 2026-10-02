@@ -21,7 +21,7 @@ export function SplitGateway() {
       <div className="flex min-h-dvh flex-col md:flex-row">
         <GatewayPanel
           href={services.rsleek.slug}
-          kicker="аппаратная коррекция фигуры"
+          kicker="Антицеллюлитный массаж для похудения"
           title={services.rsleek.name}
           line="Антицеллюлитный массаж для похудения. До минус 800 грамм жидкости уже после первой процедуры."
           tone="sculpt"
