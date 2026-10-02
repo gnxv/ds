@@ -301,6 +301,9 @@ export default function SolariumPage() {
             Напишите, на сколько минут записать, или возьмите безлимит на
             год. Подскажем время под фототип и что нанести до сеанса.
           </p>
+          <p className="mt-4 text-sm text-[#f4e6c8]/80">
+            Работаем каждый день с 11:00 до 20:00
+          </p>
           <ContactActions tone="sun" />
         </div>
       </section>

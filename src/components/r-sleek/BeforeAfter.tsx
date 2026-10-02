@@ -1,13 +1,10 @@
 const photos = [
-  "/media/r-sleek/results/01.jpg",
   "/media/r-sleek/results/02.jpg",
-  "/media/r-sleek/results/03.jpg",
   "/media/r-sleek/results/04.jpg",
   "/media/r-sleek/results/05.jpg",
   "/media/r-sleek/results/06.jpg",
   "/media/r-sleek/results/07.jpg",
   "/media/r-sleek/results/08.jpg",
-  "/media/r-sleek/results/09.jpg",
 ];
 
 export function BeforeAfter() {

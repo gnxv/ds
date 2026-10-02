@@ -12,10 +12,18 @@ export function SplitGateway() {
 
   return (
     <main className="relative min-h-dvh overflow-hidden bg-black text-white">
-      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 px-6 py-6 md:px-10">
+      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-start justify-between gap-4 px-5 py-5 md:px-10 md:py-6">
         <p className="brand-mark pointer-events-auto font-serif text-3xl tracking-[0.28em] md:text-4xl">
           {site.name}
         </p>
+        <a
+          href={site.booking}
+          target="_blank"
+          rel="noreferrer"
+          className="pointer-events-auto mt-1 rounded-full bg-[#ece6da] px-4 py-2.5 text-[11px] uppercase tracking-[0.16em] text-[#16120e] shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+        >
+          Онлайн-запись
+        </a>
       </header>
 
       <div className="flex min-h-dvh flex-col md:flex-row">

@@ -502,6 +502,9 @@ export default function RSleekPage() {
             заметны. Эффект накапливается к 5–6-й процедуре и максимума достигает
             к концу курса.
           </p>
+          <p className="mt-4 text-sm text-[#efe4d4]/80">
+            Работаем каждый день с 11:00 до 20:00
+          </p>
           <ContactActions tone="sculpt" />
         </div>
       </section>
