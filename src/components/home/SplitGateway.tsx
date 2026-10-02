@@ -23,7 +23,7 @@ export function SplitGateway() {
           href={services.rsleek.slug}
           kicker="Антицеллюлитный массаж для похудения"
           title={services.rsleek.name}
-          line="Антицеллюлитный массаж для похудения. До минус 800 грамм жидкости уже после первой процедуры."
+          line="До минус 800 грамм жидкости уже после первой процедуры."
           tone="sculpt"
           video="/media/r-sleek/manipula.mp4"
           poster="/media/r-sleek/manipula-poster.jpg"
