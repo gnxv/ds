@@ -84,7 +84,11 @@ export function SiteHeader({
           <div className="ml-auto hidden items-center gap-2 lg:flex">
             <a
               href="#contact"
-              className={`book-glow inline-flex items-center rounded-full border px-4 py-2.5 text-[10px] uppercase tracking-[0.18em] ${t.chip} ${t.ink}`}
+              className={`book-glow inline-flex items-center rounded-full border px-4 py-2.5 text-[10px] uppercase tracking-[0.18em] ${
+                tone === "sun"
+                  ? "border-[#e0b06a] bg-[#e0b06a] text-[#160e09]"
+                  : "border-[#c4a078] bg-[#c4a078] text-[#16120e]"
+              }`}
             >
               Запись
             </a>
@@ -98,7 +102,11 @@ export function SiteHeader({
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className={`book-glow ml-auto inline-flex items-center rounded-full border px-3.5 py-2 text-[10px] uppercase tracking-[0.18em] lg:hidden ${t.chip} ${t.ink}`}
+            className={`book-glow ml-auto inline-flex items-center rounded-full border px-3.5 py-2 text-[10px] uppercase tracking-[0.18em] lg:hidden ${
+              tone === "sun"
+                ? "border-[#e0b06a] bg-[#e0b06a] text-[#160e09]"
+                : "border-[#c4a078] bg-[#c4a078] text-[#16120e]"
+            }`}
           >
             Запись
           </a>
