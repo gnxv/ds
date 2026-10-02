@@ -20,7 +20,7 @@ export function SplitGateway() {
           href={site.booking}
           target="_blank"
           rel="noreferrer"
-          className="pointer-events-auto mt-1 rounded-full bg-[#ece6da] px-4 py-2.5 text-[11px] uppercase tracking-[0.16em] text-[#16120e] shadow-[0_8px_24px_rgba(0,0,0,0.35)]"
+          className="pointer-events-auto mt-1 rounded-full border border-[#d4c4ae]/50 bg-[#d4c4ae] px-4 py-2.5 text-[11px] uppercase tracking-[0.16em] text-[#16120e] shadow-[0_8px_24px_rgba(0,0,0,0.35)] transition duration-300 hover:-translate-y-0.5 hover:border-[#efe4d4] hover:bg-[#efe4d4] hover:shadow-[0_0_18px_rgba(212,196,174,0.45)]"
         >
           Онлайн-запись
         </a>
